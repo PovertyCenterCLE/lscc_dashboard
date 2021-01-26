@@ -1,0 +1,76 @@
+---
+title: "Lead Safe Cleveland Coalition- Progress & Resources"
+output: html_document
+---
+
+Here's where we can provide some brief context- the LSCC: what it is, it's overarching goals, key partners, etc. 
+<br>
+<br>
+Then, we can introduce the rollout plan & timeline
+
+```{r setup, echo=FALSE, message=FALSE, warning=FALSE, include=FALSE}
+# knitr::opts_chunk$set(include = FALSE)
+library(mapview)
+library(sf)
+library(knitr)
+library(DT)
+library(tidyverse)
+library(kableExtra)
+library(gridExtra)
+
+
+ro_map <- st_read("D:/ArcIMS/lscc_dashboard_draft/data/zip_map.shp")
+
+
+```
+
+
+### Rollout zone map
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+
+
+ro2 <- ro_map %>% as.data.frame() %>% select(-geometry) 
+by_zone <- ro2 %>% 
+  filter(!is.na(zone)) %>% 
+  arrange(zone, zip) %>% 
+  group_by(zone) %>% 
+  mutate(zip_id = row_number()) %>% 
+  pivot_wider(values_from = zip, names_prefix = "zip", names_from = zip_id) %>% 
+  unite(`Zip codes`, zip1:zip5, sep = ", ", remove = TRUE, na.rm = TRUE) %>% 
+  rename(Zone = zone)
+
+
+# ro_map %>% ggplot(aes(fill = zone)) + geom_sf() + theme_minimal() + theme(axis.text = element_blank(), panel.grid = element_blank())
+mapview(ro_map, zcol = "zone")
+# grid::grid.newpage()
+# gridExtra::grid.table(by_zone)
+# knitr::kable(by_zone, format = "pipe", padding = 0)
+
+```
+
+<br>
+<br>
+
+### Zip codes in rollout zones
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+datatable(by_zone)
+
+```
+
+
+<br>
+<br>
+
+Next, maybe briefly describe our role as auditors, and then provide links to the dashboards, and to the updated list of local accredited contractors.
+
+<br>
+<br>
+
+## LSCC Progress trackers
+
+* [Child lead exposure and testing](leadflexdashboard.html)
+
+* [Lead safe rental market](rental_market.html)
+
