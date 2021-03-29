@@ -1,76 +1,75 @@
 ---
-title: "Lead Safe Cleveland Coalition- Progress & Resources"
-output: html_document
+title: "<span style='font-size: 70px'>Lead Safe Cleveland Coalition Data Dashboard</style>"
+output: 
+  html_document: 
+    include: 
+      after_body: footer.html
+editor_options: 
+  markdown: 
+    wrap: 72
 ---
 
-Here's where we can provide some brief context- the LSCC: what it is, it's overarching goals, key partners, etc. 
-<br>
-<br>
-Then, we can introduce the rollout plan & timeline
-
-```{r setup, echo=FALSE, message=FALSE, warning=FALSE, include=FALSE}
-# knitr::opts_chunk$set(include = FALSE)
-library(mapview)
-library(sf)
-library(knitr)
-library(DT)
-library(tidyverse)
-library(kableExtra)
-library(gridExtra)
-
-
-ro_map <- st_read("D:/ArcIMS/lscc_dashboard_draft/data/zip_map.shp")
-
-
-```
-
-
-### Rollout zone map
-
-```{r echo=FALSE, message=FALSE, warning=FALSE}
-
-
-ro2 <- ro_map %>% as.data.frame() %>% select(-geometry) 
-by_zone <- ro2 %>% 
-  filter(!is.na(zone)) %>% 
-  arrange(zone, zip) %>% 
-  group_by(zone) %>% 
-  mutate(zip_id = row_number()) %>% 
-  pivot_wider(values_from = zip, names_prefix = "zip", names_from = zip_id) %>% 
-  unite(`Zip codes`, zip1:zip5, sep = ", ", remove = TRUE, na.rm = TRUE) %>% 
-  rename(Zone = zone)
-
-
-# ro_map %>% ggplot(aes(fill = zone)) + geom_sf() + theme_minimal() + theme(axis.text = element_blank(), panel.grid = element_blank())
-mapview(ro_map, zcol = "zone")
-# grid::grid.newpage()
-# gridExtra::grid.table(by_zone)
-# knitr::kable(by_zone, format = "pipe", padding = 0)
-
-```
-
-<br>
 <br>
 
-### Zip codes in rollout zones
+**DRAFT - NOT FOR DISTRIBUTION - These dashboards are for demonstration purposes only, and are based on data that are either simulated or not yet finalized and validated**
 
-```{r echo=FALSE, message=FALSE, warning=FALSE}
-datatable(by_zone)
+<br>
 
-```
+We believe that no child should ever be lead poisoned. That is why we're
+working with XXX organizations to make housing lead safe for everyone in
+Cleveland. All homes built before 1978 used lead paint, so the [City of
+Cleveland](https://cityofcleveland.legistar.com/LegislationDetail.aspx?ID=3971384&GUID=55AA3B1D-224B-41FD-B228-FC528D10269C&Options=ID%7CText%7C&Search=lead)
+is requiring that all rental properties built before 1978 have a Lead
+Safe Certification. This certification [ensures that homes are lead
+safe](https://leadsafecle.org/6steps). Starting March 2021, phases of
+[zip code groups](https://leadsafecle.org/zip-code-groupings) will be
+required to get the certification.
+
+<br>
+
+The [**Lead Safe Cleveland Data Dashboard**](https://cwru-urb-pov.shinyapps.io/lead_flexdashboard_shiny_selected_vars_mjh_ams_2_10_2021/) is designed to give you quick
+answers to questions you may have about the rollout and impact of the
+Cleveland Lead Safe Ordinance.
+
+<br>
+
+Here’s a sample of some of the questions the dashboard can help answer:
 
 
 <br>
+
+<a href="https://cwru-urb-pov.shinyapps.io/lead_flexdashboard_shiny_selected_vars_mjh_ams_2_10_2021/#section-baseline"><button type="button">How does childhood lead poisoning vary across the city over time?</button></a>
+
 <br>
 
-Next, maybe briefly describe our role as auditors, and then provide links to the dashboards, and to the updated list of local accredited contractors.
+
+<a href="https://cwru-urb-pov.shinyapps.io/lead_flexdashboard_shiny_selected_vars_mjh_ams_2_10_2021/#section-implementation-and-monitoring"><button type="button">How do lead screening and testing rates vary across the city over time?</button></a>
 
 <br>
+
+
+<a href="https://cwru-urb-pov.shinyapps.io/lead_flexdashboard_shiny_selected_vars_mjh_ams_2_10_2021/#section-baseline-1"><button type="button">How many evictions and move-out orders have occurred in my neighborhood?</button></a>
+
 <br>
 
-## LSCC Progress trackers
 
-* [Child lead exposure and testing](leadflexdashboard.html)
+<a href="https://cwru-urb-pov.shinyapps.io/lead_flexdashboard_shiny_selected_vars_mjh_ams_2_10_2021/#section-lead-safe-certification"><button type="button">How many rental properties have been certified as Lead Safe?</button></a>
 
-* [Lead safe rental market](rental_market.html)
+<br>
+
+
+<a href="https://cwru-urb-pov.shinyapps.io/lead_flexdashboard_shiny_selected_vars_mjh_ams_2_10_2021/#section-home-fund"><button type="button">How many property owners have received loans or grants to make their property lead safe?</button></a>
+
+<br>
+
+
+<a href="https://cwru-urb-pov.shinyapps.io/lead_flexdashboard_shiny_selected_vars_mjh_ams_2_10_2021/#section-resource-center"><button type="button">How many lead safe technicians have been trained and certified?</button></a>
+
+<br>
+
+
+<a href="https://cwru-urb-pov.shinyapps.io/lead_flexdashboard_shiny_selected_vars_mjh_ams_2_10_2021/#section-development-advocacy"><button type="button">How much money has the Lead Safe Cleveland Coalition raised?</button></a>
+
+<br>
+
 
