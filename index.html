@@ -110,93 +110,6 @@ summary {
 </style>
 
 
-<style type="text/css">
-/* padding for bootstrap navbar */
-body {
-  padding-top: 52px;
-  padding-bottom: 40px;
-}
-/* offset scroll position for anchor links (for fixed navbar)  */
-.section h1 {
-  padding-top: 57px;
-  margin-top: -57px;
-}
-.section h2 {
-  padding-top: 57px;
-  margin-top: -57px;
-}
-.section h3 {
-  padding-top: 57px;
-  margin-top: -57px;
-}
-.section h4 {
-  padding-top: 57px;
-  margin-top: -57px;
-}
-.section h5 {
-  padding-top: 57px;
-  margin-top: -57px;
-}
-.section h6 {
-  padding-top: 57px;
-  margin-top: -57px;
-}
-.dropdown-submenu {
-  position: relative;
-}
-.dropdown-submenu>.dropdown-menu {
-  top: 0;
-  left: 100%;
-  margin-top: -6px;
-  margin-left: -1px;
-  border-radius: 0 6px 6px 6px;
-}
-.dropdown-submenu:hover>.dropdown-menu {
-  display: block;
-}
-.dropdown-submenu>a:after {
-  display: block;
-  content: " ";
-  float: right;
-  width: 0;
-  height: 0;
-  border-color: transparent;
-  border-style: solid;
-  border-width: 5px 0 5px 5px;
-  border-left-color: #cccccc;
-  margin-top: 5px;
-  margin-right: -10px;
-}
-.dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
-}
-.dropdown-submenu.pull-left {
-  float: none;
-}
-.dropdown-submenu.pull-left>.dropdown-menu {
-  left: -100%;
-  margin-left: 10px;
-  border-radius: 6px 0 6px 6px;
-}
-</style>
-
-<script>
-// manage active state of menu based on current page
-$(document).ready(function () {
-  // active menu anchor
-  href = window.location.pathname
-  href = href.substr(href.lastIndexOf('/') + 1)
-  if (href === "")
-    href = "index.html";
-  var menuAnchor = $('a[href="' + href + '"]');
-
-  // mark it active
-  menuAnchor.parent().addClass('active');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
-});
-</script>
 
 <!-- tabsets -->
 
@@ -270,27 +183,6 @@ $(document).ready(function () {
 
 
 
-<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="index.html">HOME</a>
-    </div>
-    <div id="navbar" class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
-        
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        
-      </ul>
-    </div><!--/.nav-collapse -->
-  </div><!--/.container -->
-</div><!--/.navbar -->
-
 <div class="fluid-row" id="header">
 
 
@@ -300,13 +192,14 @@ $(document).ready(function () {
 </div>
 
 
+<p><br></p>
 <p><strong>DRAFT - NOT FOR DISTRIBUTION - These dashboards are for demonstration purposes only, and are based on data that are either simulated or not yet finalized and validated</strong></p>
 <p><br></p>
 <p>We believe that no child should ever be lead poisoned. That is why we’re working with XXX organizations to make housing lead safe for everyone in Cleveland. All homes built before 1978 used lead paint, so the <a href="https://cityofcleveland.legistar.com/LegislationDetail.aspx?ID=3971384&amp;GUID=55AA3B1D-224B-41FD-B228-FC528D10269C&amp;Options=ID%7CText%7C&amp;Search=lead">City of Cleveland</a> is requiring that all rental properties built before 1978 have a Lead Safe Certification. This certification <a href="https://leadsafecle.org/6steps">ensures that homes are lead safe</a>. Starting March 2021, phases of <a href="https://leadsafecle.org/zip-code-groupings">zip code groups</a> will be required to get the certification.</p>
 <p><br></p>
-<p>The <strong>Lead Safe Cleveland Data Dashboard</strong> is designed to give you quick answers to questions you may have about the rollout and impact of the Cleveland Lead Safe Ordinance.</p>
+<p>The <a href="https://cwru-urb-pov.shinyapps.io/lead_flexdashboard_shiny_selected_vars_mjh_ams_2_10_2021/"><strong>Lead Safe Cleveland Data Dashboard</strong></a> is designed to give you quick answers to questions you may have about the rollout and impact of the Cleveland Lead Safe Ordinance.</p>
 <p><br></p>
-<p>Here’s a sample of some</p>
+<p>Here’s a sample of some of the questions the dashboard can help answer:</p>
 <p><a href="https://cwru-urb-pov.shinyapps.io/lead_flexdashboard_shiny_selected_vars_mjh_ams_2_10_2021/#section-baseline"><img src="data/q1.png"/></a></p>
 <p><br></p>
 <p><a href="https://cwru-urb-pov.shinyapps.io/lead_flexdashboard_shiny_selected_vars_mjh_ams_2_10_2021/#section-implementation-and-monitoring"><img src="data/q2.png"/></a></p>

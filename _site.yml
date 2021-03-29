@@ -1,6 +1,6 @@
 name: "LSCC Dashboard"
-navbar:
-  title: "HOME"
+# navbar:
+#   title: "HOME"
   # left:
   #   - text: "About"
   #     href: about.html
