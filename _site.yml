@@ -1,20 +1,21 @@
 name: "LSCC Dashboard"
 navbar:
   title: "HOME"
-  left:
-    - text: "About"
-      href: about.html
-    - text: "Progress Dashboards"
-      menu:
-      - text: "Lead"
-        href: leadflexdashboard.html
-      - text: "Rental Market"
-        href: rental_market.html
+  # left:
+  #   - text: "About"
+  #     href: about.html
+  #   - text: "Progress Dashboards"
+  #     menu:
+      # - text: "Lead"
+      #   href: leadflexdashboard.html
+      # - text: "Rental Market"
+      #   href: rental_market.html
 
 output_dir: "."
 output:
   html_document:
-    theme: yeti
+    theme: spacelab
+    css: styles.css
     highlight: textmate
 #    include:
 #      after_body: _footer.html
