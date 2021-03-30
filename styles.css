@@ -1,4 +1,9 @@
 
+h1.title {
+    font-size: 70px;
+   /* white-space: nowrap; */
+}
+
 
 
 p:nth-child(3) strong {
@@ -9,6 +14,12 @@ p {
   font-size: 24px;
 }
 
+
+.container-fluid {
+ /*  max-width: 1300px; */
+  padding-left: 0px;
+  padding-right: 0px;
+}
 
 button {
   text-align: center;
