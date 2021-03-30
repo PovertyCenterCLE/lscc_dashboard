@@ -1,4 +1,6 @@
 
+
+
 p:nth-child(3) strong {
   color: #fa0000;
 }
@@ -14,8 +16,12 @@ button {
   color:#ffffff;
   border-radius: 8px;
   border: 1px solid #9e9e9e;
-  width: 300px;
-
+  width: 320px;
+   display: inline-block;
+   margin-right: 100px;
+  height: 160px;
+  vertical-align: middle;
+  
 }
 
 
@@ -37,7 +43,10 @@ button {
 
 #q7{
   background-color: #b0284f;
+   margin-left:210px;
 }
+
+
 
 
 
