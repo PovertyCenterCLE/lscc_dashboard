@@ -14,7 +14,7 @@ name: "LSCC Dashboard"
 output_dir: "."
 output:
   html_document:
-    theme: spacelab
+    theme: cosmo
     css: styles.css
     highlight: textmate
 #    include:
