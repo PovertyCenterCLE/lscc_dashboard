@@ -12,8 +12,13 @@ editor_options:
 
 
 
-No child should ever be lead poisoned. The [Lead Safe Cleveland Coalition](https://leadsafecle.org) is working to make housing lead safe for everyone in Cleveland. 
+No child should ever be lead poisoned. According to the Centers for Disease Control and Prevention, "exposure to lead can seriously harm a child’s health, including damage to the brain and nervous system, slowed growth and development, learning and behavior problems, and hearing and speech problems."^[[source: National Center for Environmental Health](https://www.cdc.gov/nceh/features/leadpoisoning/index.html#:~:text=Exposure%20to%20lead%20can%20seriously,in%20children%20has%20been%20identified.)]
 
+<br>
+
+The [Lead Safe Cleveland Coalition](https://leadsafecle.org) is working to make housing lead safe for everyone in Cleveland. 
+
+<br>
 
 Most homes built before 1978 used lead paint, which poses a danger for children. The [City of Cleveland](https://cityofcleveland.legistar.com/LegislationDetail.aspx?ID=3971384&GUID=55AA3B1D-224B-41FD-B228-FC528D10269C&Options=ID%7CText%7C&Search=lead) now requires that all rental properties built before 1978 have a Lead Safe Certification. That means the home has been inspected by a certified professional and [does not have any current lead hazards](https://leadsafecle.org/6steps). All rentals will have to get a certification starting in March 2021, [a few ZIP codes at a time](https://leadsafecle.org/zip-code-groupings).
 
@@ -28,7 +33,7 @@ Here are just a few of the questions the dashboard can help answer:
 <br>
 
 <div class="btn-group">
-<a href="https://cwru-urb-pov.shinyapps.io/lead_flexdashboard_blank_3_30_2021/#section-baseline"><button id="q1" value="q1">How have patterns of childhood lead poisoning in Cleveland changed over time?</button></a>
+<a href="https://cwru-urb-pov.shinyapps.io/lead_flexdashboard_blank_3_30_2021/#section-baseline"><button id="q1" value="q1">How has the number of children poisoned by lead changed over time in Cleveland neighborhoods?</button></a>
 <a href="https://cwru-urb-pov.shinyapps.io/lead_flexdashboard_blank_3_30_2021/#section-implementation-and-monitoring"><button id="q2" value="q2">How do lead screening and testing rates vary across the city over time?</button></a>
 </div>
 
