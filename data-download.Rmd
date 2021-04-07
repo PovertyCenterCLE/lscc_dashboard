@@ -1,0 +1,11 @@
+---
+title: "LSCC Data Downloads"
+output: html_document
+---
+
+Agreement: don't use this data for any nefarious purposes
+
+By Geography
+
+* Zip
+* SPA

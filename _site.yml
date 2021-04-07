@@ -1,15 +1,10 @@
 name: "LSCC Dashboard"
-# navbar:
-#   title: "HOME"
-  # left:
-  #   - text: "About"
-  #     href: about.html
-  #   - text: "Progress Dashboards"
-  #     menu:
-      # - text: "Lead"
-      #   href: leadflexdashboard.html
-      # - text: "Rental Market"
-      #   href: rental_market.html
+navbar:
+  left:
+  - text: "Home"
+    href: index.html
+  - text: "Download some data"
+    href: data-download.html
 
 output_dir: "."
 output:
@@ -17,5 +12,3 @@ output:
     theme: cosmo
     css: styles.css
     highlight: textmate
-#    include:
-#      after_body: _footer.html

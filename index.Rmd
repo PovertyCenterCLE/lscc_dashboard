@@ -1,5 +1,5 @@
 ---
-title: "<span style='font-size: 70px'>Lead Safe Cleveland Coalition Data Dashboard</style>"
+title: "Lead Safe Cleveland Coalition Data Dashboard"
 output: 
   html_document: 
     include: 
@@ -9,67 +9,55 @@ editor_options:
     wrap: 72
 ---
 
-<br>
 
-**DRAFT - NOT FOR DISTRIBUTION - These dashboards are for demonstration purposes only, and are based on data that are either simulated or not yet finalized and validated**
 
-<br>
 
-We believe that no child should ever be lead poisoned. That is why we're
-working with XXX organizations to make housing lead safe for everyone in
-Cleveland. All homes built before 1978 used lead paint, so the [City of
-Cleveland](https://cityofcleveland.legistar.com/LegislationDetail.aspx?ID=3971384&GUID=55AA3B1D-224B-41FD-B228-FC528D10269C&Options=ID%7CText%7C&Search=lead)
-is requiring that all rental properties built before 1978 have a Lead
-Safe Certification. This certification [ensures that homes are lead
-safe](https://leadsafecle.org/6steps). Starting March 2021, phases of
-[zip code groups](https://leadsafecle.org/zip-code-groupings) will be
-required to get the certification.
+No child should ever be lead poisoned. The [Lead Safe Cleveland Coalition](https://leadsafecle.org) is working to make housing lead safe for everyone in Cleveland. 
+
+
+Most homes built before 1978 used lead paint, which poses a danger for children. The [City of Cleveland](https://cityofcleveland.legistar.com/LegislationDetail.aspx?ID=3971384&GUID=55AA3B1D-224B-41FD-B228-FC528D10269C&Options=ID%7CText%7C&Search=lead) now requires that all rental properties built before 1978 have a Lead Safe Certification. That means the home has been inspected by a certified professional and [does not have any current lead hazards.](https://leadsafecle.org/6steps). All rentals will have to get a certification starting in March 2021, [a few ZIP codes at a time](https://leadsafecle.org/zip-code-groupings).
 
 <br>
 
-The [**Lead Safe Cleveland Data Dashboard**](https://cwru-urb-pov.shinyapps.io/lead_flexdashboard_shiny_selected_vars_mjh_ams_2_10_2021/) is designed to give you quick
-answers to questions you may have about the rollout and impact of the
-Cleveland Lead Safe Ordinance.
+The [**Lead Safe Cleveland Coalition Data Dashboard**](https://cwru-urb-pov.shinyapps.io/lead_flexdashboard_blank_3_30_2021/) has answers to common questions and information on the rollout of this new law and how it is affecting children, families and neighborhoods. 
 
 <br>
 
-Here’s a sample of some of the questions the dashboard can help answer:
-
-
-<br>
-
-<a href="https://cwru-urb-pov.shinyapps.io/lead_flexdashboard_shiny_selected_vars_mjh_ams_2_10_2021/#section-baseline"><button type="button">How does childhood lead poisoning vary across the city over time?</button></a>
+Here are just a few of the questions the dashboard can help answer:
 
 <br>
 
-
-<a href="https://cwru-urb-pov.shinyapps.io/lead_flexdashboard_shiny_selected_vars_mjh_ams_2_10_2021/#section-implementation-and-monitoring"><button type="button">How do lead screening and testing rates vary across the city over time?</button></a>
-
-<br>
-
-
-<a href="https://cwru-urb-pov.shinyapps.io/lead_flexdashboard_shiny_selected_vars_mjh_ams_2_10_2021/#section-baseline-1"><button type="button">How many evictions and move-out orders have occurred in my neighborhood?</button></a>
+<div class="btn-group">
+<a href="https://cwru-urb-pov.shinyapps.io/lead_flexdashboard_blank_3_30_2021/#section-baseline"><button id="q1" value="q1">How have patterns of childhood lead poisoning in Cleveland changed over time?</button></a>
+<a href="https://cwru-urb-pov.shinyapps.io/lead_flexdashboard_blank_3_30_2021/#section-implementation-and-monitoring"><button id="q2" value="q2">How do lead screening and testing rates vary across the city over time?</button></a>
+</div>
 
 <br>
 
+<div class="btn-group">
+<a href="https://cwru-urb-pov.shinyapps.io/lead_flexdashboard_blank_3_30_2021/#section-baseline-1"><button id="q3" value="q3">How many evictions and move-out orders have occurred in my neighborhood?</button></a>
+<a href="https://cwru-urb-pov.shinyapps.io/lead_flexdashboard_blank_3_30_2021/#section-lead-safe-certification"><button id="q4" value="q4">How many rental properties have been certified as Lead Safe?</button></a>
+</div>
 
-<a href="https://cwru-urb-pov.shinyapps.io/lead_flexdashboard_shiny_selected_vars_mjh_ams_2_10_2021/#section-lead-safe-certification"><button type="button">How many rental properties have been certified as Lead Safe?</button></a>
+<br>
+
+<div class="btn-group flex-wrap" data-toggle="buttons">
+<div class="btn-group">
+<a href="https://cwru-urb-pov.shinyapps.io/lead_flexdashboard_blank_3_30_2021/#section-lead-safe-loans-and-grants"><button id="q5" value="q5">How many property owners have received loans or grants to make their property lead safe?</button></a>
+<a href="https://cwru-urb-pov.shinyapps.io/lead_flexdashboard_blank_3_30_2021/#section-resource-center"><button id="q6" value="q6">How many professionals have been trained and certified to detect lead in homes?</button></a>
+</div>
+</div>
 
 <br>
 
 
-<a href="https://cwru-urb-pov.shinyapps.io/lead_flexdashboard_shiny_selected_vars_mjh_ams_2_10_2021/#section-home-fund"><button type="button">How many property owners have received loans or grants to make their property lead safe?</button></a>
+<a href="https://cwru-urb-pov.shinyapps.io/lead_flexdashboard_blank_3_30_2021/#section-development-advocacy"><button id="q7" value="q7">How much money has the Lead Safe Cleveland Coalition raised?</button></a>
 
 <br>
 
 
-<a href="https://cwru-urb-pov.shinyapps.io/lead_flexdashboard_shiny_selected_vars_mjh_ams_2_10_2021/#section-resource-center"><button type="button">How many lead safe technicians have been trained and certified?</button></a>
-
-<br>
 
 
-<a href="https://cwru-urb-pov.shinyapps.io/lead_flexdashboard_shiny_selected_vars_mjh_ams_2_10_2021/#section-development-advocacy"><button type="button">How much money has the Lead Safe Cleveland Coalition raised?</button></a>
 
-<br>
 
 
