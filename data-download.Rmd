@@ -1,11 +1,81 @@
 ---
 title: "LSCC Data Downloads"
+runtime: shiny
 output: html_document
 ---
 
-Agreement: don't use this data for any nefarious purposes
 
-By Geography
 
-* Zip
-* SPA
+```{r initial_setup, echo=FALSE, cache=FALSE, message = FALSE, warning = FALSE}
+library(downloadthis)
+library(here)
+library(leafpop)
+library(writexl)
+library(readxl)
+library(shiny)
+```
+  
+By downloading any of the datasets below, you are agreeing that you will not use it for nefarious reasons. We want to add a better disclaimer here probably...  
+
+  
+  
+## Lead Poisoning Data  
+  
+By Zip code:
+
+```{r, echo=FALSE}
+data <-  read_excel(here("data", "popest0to3_16_17_18_Cle_Zip_Race_test.xlsx"), sheet="zip_flat") 
+downloadButton("downloadNormal", "Download the data:", class = "butt1")
+
+downloadHandler(
+    filename = "Lead_Poisoning_By_Zip.xlsx",
+
+    content = function(file) {
+        write_xlsx(data, file)
+    },
+    contentType = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
+
+```
+
+By Neighborhood:
+
+```{r, echo=FALSE}
+data <-  read_excel(here("data", "popest0to3_16_17_18_Cle_Zip_Race_test.xlsx"), sheet="nhood_flat") 
+downloadButton("downloadNormal", "Download the data:", class = "butt1")
+
+downloadHandler(
+    filename = "Lead_Poisoning_By_Neighborhood.xlsx",
+
+    content = function(file) {
+        write_xlsx(data, file)
+    },
+    contentType = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
+
+```
+  
+By Zone:
+
+```{r, echo=FALSE}
+data <-  read_excel(here("data", "popest0to3_16_17_18_Cle_Zip_Race_test.xlsx"), sheet="zone_flat") 
+downloadButton("downloadNormal", "Download the data:", class = "butt1")
+
+downloadHandler(
+    filename = "Lead_Poisoning_By_Zone.xlsx",
+
+    content = function(file) {
+        write_xlsx(data, file)
+    },
+    contentType = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
+
+```
+  
+  
+  
+## Housing Market
+
+```{r}
+
+```
+
+
+

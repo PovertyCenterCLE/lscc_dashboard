@@ -19,6 +19,15 @@
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
@@ -33,11 +42,6 @@
     </style>
 
 <style type="text/css">code{white-space: pre;}</style>
-<style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
 <script type="text/javascript">
 if (window.hljs) {
   hljs.configure({languages: []});
@@ -50,35 +54,9 @@ if (window.hljs) {
 
 
 
-<style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
 
 
-<link rel="stylesheet" href="styles.css" type="text/css" />
+<link rel="stylesheet" href="styles_index.css" type="text/css" />
 
 
 
@@ -87,10 +65,6 @@ h6 {
   max-width: 940px;
   margin-left: auto;
   margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
 }
 img {
   max-width:100%;
@@ -107,40 +81,13 @@ button.code-folding-btn:focus {
 summary {
   display: list-item;
 }
+pre code {
+  padding: 0;
+}
 </style>
 
 
 <style type="text/css">
-/* padding for bootstrap navbar */
-body {
-  padding-top: 51px;
-  padding-bottom: 40px;
-}
-/* offset scroll position for anchor links (for fixed navbar)  */
-.section h1 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h2 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h3 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h4 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h5 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h6 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
 .dropdown-submenu {
   position: relative;
 }
@@ -168,7 +115,7 @@ body {
   margin-right: -10px;
 }
 .dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
+  border-left-color: #adb5bd;
 }
 .dropdown-submenu.pull-left {
   float: none;
@@ -180,7 +127,7 @@ body {
 }
 </style>
 
-<script>
+<script type="text/javascript">
 // manage active state of menu based on current page
 $(document).ready(function () {
   // active menu anchor
@@ -191,10 +138,23 @@ $(document).ready(function () {
   var menuAnchor = $('a[href="' + href + '"]');
 
   // mark it active
-  menuAnchor.parent().addClass('active');
+  menuAnchor.tab('show');
 
   // if it's got a parent navbar menu mark it active as well
   menuAnchor.closest('li.dropdown').addClass('active');
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
 });
 </script>
 
@@ -206,7 +166,6 @@ $(document).ready(function () {
   max-height: 500px;
   min-height: 44px;
   overflow-y: auto;
-  background: white;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
@@ -290,13 +249,15 @@ $(document).ready(function () {
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        
+        <li>
+  <a href="en_espanol.html">En español</a>
+</li>
       </ul>
     </div><!--/.nav-collapse -->
   </div><!--/.container -->
 </div><!--/.navbar -->
 
-<div class="fluid-row" id="header">
+<div id="header">
 
 
 
@@ -315,20 +276,45 @@ $(document).ready(function () {
 <p><br></p>
 <p>Here are just a few of the questions the dashboard can help answer:</p>
 <p><br></p>
-<div class="btn-group">
-<p><a href="https://cwru-urb-pov.shinyapps.io/lead_flexdashboard_blank_3_30_2021/#section-baseline"><button id="q1" value="q1">How has the number of children poisoned by lead changed over time in Cleveland neighborhoods?</button></a> <a href="https://cwru-urb-pov.shinyapps.io/lead_flexdashboard_blank_3_30_2021/#section-implementation-and-monitoring"><button id="q2" value="q2">How do lead screening and testing rates vary across the city over time?</button></a></p>
+<div class="card" style="width: 50 rem;">
+<ul class="list-group list-group-flush">
+<li class="list-group-item" id="q1">
+<a href="https://cwru-urb-pov.shinyapps.io/lead_flexdashboard_blank_3_30_2021/#section-baseline">How has the number of children poisoned by lead changed over time in Cleveland neighborhoods?</a>
+</li>
+<li class="list-group-item" id="q2">
+<a href="https://cwru-urb-pov.shinyapps.io/lead_flexdashboard_blank_3_30_2021/#section-implementation-and-monitoring">How do lead screening and testing rates vary across the city over time?</a>
+</li>
+</ul>
 </div>
 <p><br></p>
-<div class="btn-group">
-<p><a href="https://cwru-urb-pov.shinyapps.io/lead_flexdashboard_blank_3_30_2021/#section-baseline-1"><button id="q3" value="q3">How many evictions and move-out orders have occurred in my neighborhood?</button></a> <a href="https://cwru-urb-pov.shinyapps.io/lead_flexdashboard_blank_3_30_2021/#section-lead-safe-certification"><button id="q4" value="q4">How many rental properties have been certified as Lead Safe?</button></a></p>
+<div class="card" style="width: 50 rem;">
+<ul class="list-group list-group-flush">
+<li class="list-group-item" id="q3">
+<a href="https://cwru-urb-pov.shinyapps.io/lead_flexdashboard_blank_3_30_2021/#section-baseline">How has the number of children poisoned by lead changed over time in Cleveland neighborhoods?</a>
+</li>
+<li class="list-group-item" id="q4">
+<a href="https://cwru-urb-pov.shinyapps.io/lead_flexdashboard_blank_3_30_2021/#section-implementation-and-monitoring">How do lead screening and testing rates vary across the city over time?</a>
+</li>
+</ul>
 </div>
 <p><br></p>
-<div class="btn-group">
-<p><a href="https://cwru-urb-pov.shinyapps.io/lead_flexdashboard_blank_3_30_2021/#section-lead-safe-loans-and-grants"><button id="q5" value="q5">How many property owners have received loans or grants to make their property lead safe?</button></a> <a href="https://cwru-urb-pov.shinyapps.io/lead_flexdashboard_blank_3_30_2021/#section-resource-center"><button id="q6" value="q6">How many professionals have been trained and certified to detect lead in homes?</button></a></p>
+<div class="card" style="width: 50 rem;">
+<ul class="list-group list-group-flush">
+<li class="list-group-item" id="q5">
+<a href="https://cwru-urb-pov.shinyapps.io/lead_flexdashboard_blank_3_30_2021/#section-baseline">How has the number of children poisoned by lead changed over time in Cleveland neighborhoods?</a>
+</li>
+<li class="list-group-item" id="q6">
+<a href="https://cwru-urb-pov.shinyapps.io/lead_flexdashboard_blank_3_30_2021/#section-implementation-and-monitoring">How do lead screening and testing rates vary across the city over time?</a>
+</li>
+</ul>
 </div>
 <p><br></p>
-<p><a href="https://cwru-urb-pov.shinyapps.io/lead_flexdashboard_blank_3_30_2021/#section-development-advocacy"><button id="q7" value="q7">How much money has the Lead Safe Cleveland Coalition raised?</button></a></p>
-<p><br></p>
+<div class="card" style="width: 50 rem;">
+<ul class="list-group list-group-flush">
+<li class="list-group-item" id="q7">
+<a href="https://cwru-urb-pov.shinyapps.io/lead_flexdashboard_blank_3_30_2021/#section-development-advocacy">How much money has the Lead Safe Cleveland Coalition raised?</a>
+</li>
+</div>
 <div class="footnotes">
 <hr />
 <ol>
@@ -368,7 +354,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
+    $(this).parent().toggleClass('nav-tabs-open');
   });
 });
 </script>

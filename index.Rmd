@@ -2,13 +2,13 @@
 title: "Lead Safe Cleveland Coalition Data Dashboard"
 output: 
   html_document: 
+    css: styles_index.css
     include: 
       after_body: footer.html
 editor_options: 
   markdown: 
     wrap: 72
 ---
-
 
 
 
@@ -32,34 +32,40 @@ Here are just a few of the questions the dashboard can help answer:
 
 <br>
 
-<div class="btn-group">
-<a href="https://cwru-urb-pov.shinyapps.io/lead_flexdashboard_blank_3_30_2021/#section-baseline"><button id="q1" value="q1">How has the number of children poisoned by lead changed over time in Cleveland neighborhoods?</button></a>
-<a href="https://cwru-urb-pov.shinyapps.io/lead_flexdashboard_blank_3_30_2021/#section-implementation-and-monitoring"><button id="q2" value="q2">How do lead screening and testing rates vary across the city over time?</button></a>
-</div>
 
-<br>
-
-<div class="btn-group">
-<a href="https://cwru-urb-pov.shinyapps.io/lead_flexdashboard_blank_3_30_2021/#section-baseline-1"><button id="q3" value="q3">How many evictions and move-out orders have occurred in my neighborhood?</button></a>
-<a href="https://cwru-urb-pov.shinyapps.io/lead_flexdashboard_blank_3_30_2021/#section-lead-safe-certification"><button id="q4" value="q4">How many rental properties have been certified as Lead Safe?</button></a>
-</div>
-
-<br>
-
-<div class="btn-group">
-<a href="https://cwru-urb-pov.shinyapps.io/lead_flexdashboard_blank_3_30_2021/#section-lead-safe-loans-and-grants"><button id="q5" value="q5">How many property owners have received loans or grants to make their property lead safe?</button></a>
-<a href="https://cwru-urb-pov.shinyapps.io/lead_flexdashboard_blank_3_30_2021/#section-resource-center"><button id="q6" value="q6">How many professionals have been trained and certified to detect lead in homes?</button></a>
+<div class="card" style="width: 50 rem;">
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item" id="q1"><a href="https://cwru-urb-pov.shinyapps.io/lead_flexdashboard_blank_3_30_2021/#section-baseline">How has the number of children poisoned by lead changed over time in Cleveland neighborhoods?</a></li>
+     <li class="list-group-item" id="q2"><a href="https://cwru-urb-pov.shinyapps.io/lead_flexdashboard_blank_3_30_2021/#section-implementation-and-monitoring">How do lead screening and testing rates vary across the city over time?</a></li>
+     </ul>
 </div>
 
 <br>
 
 
-<a href="https://cwru-urb-pov.shinyapps.io/lead_flexdashboard_blank_3_30_2021/#section-development-advocacy"><button id="q7" value="q7">How much money has the Lead Safe Cleveland Coalition raised?</button></a>
+<div class="card" style="width: 50 rem;">
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item" id="q3"><a href="https://cwru-urb-pov.shinyapps.io/lead_flexdashboard_blank_3_30_2021/#section-baseline">How has the number of children poisoned by lead changed over time in Cleveland neighborhoods?</a></li>
+     <li class="list-group-item" id="q4"><a href="https://cwru-urb-pov.shinyapps.io/lead_flexdashboard_blank_3_30_2021/#section-implementation-and-monitoring">How do lead screening and testing rates vary across the city over time?</a></li>
+     </ul>
+</div>
+
+<br>
+
+<div class="card" style="width: 50 rem;">
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item" id="q5"><a href="https://cwru-urb-pov.shinyapps.io/lead_flexdashboard_blank_3_30_2021/#section-baseline">How has the number of children poisoned by lead changed over time in Cleveland neighborhoods?</a></li>
+     <li class="list-group-item" id="q6"><a href="https://cwru-urb-pov.shinyapps.io/lead_flexdashboard_blank_3_30_2021/#section-implementation-and-monitoring">How do lead screening and testing rates vary across the city over time?</a></li>
+     </ul>
+</div>
 
 <br>
 
 
-
+<div class="card" style="width: 50 rem;">
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item" id="q7"><a href="https://cwru-urb-pov.shinyapps.io/lead_flexdashboard_blank_3_30_2021/#section-development-advocacy">How much money has the Lead Safe Cleveland Coalition raised?</a></li>
+</div>
 
 
 

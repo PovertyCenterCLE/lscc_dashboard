@@ -5,10 +5,12 @@ navbar:
     href: index.html
   - text: "Download some data"
     href: data-download.html
+  right:
+  - text: "En español"
+    href: en_espanol.html
 
 output_dir: "."
 output:
   html_document:
     theme: cosmo
-    css: styles.css
     highlight: textmate
