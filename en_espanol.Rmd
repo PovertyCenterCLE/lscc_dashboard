@@ -69,3 +69,8 @@ Estas son solo algunas de las preguntas que el tablero puede ayudar a responder:
     <li class="list-group-item" id="q7"><a href="https://cwru-urb-pov.shinyapps.io/lead_flexdashboard_blank_3_30_2021/#section-development-advocacy">¿Cuánto dinero ha recaudado la Coalición para Eliminar la Intoxicación por Plomo en Cleveland?</a></li>
 </div>
 
+
+<br>
+
+Para obtener más información sobre el esfuerzo actual para hacer que las casas de Cleveland sean seguras con el plomo, ayuda y recursos locales, y más, visite la [Coalición de Cleveland con Plomo](https://leadsafecle.org).
+
