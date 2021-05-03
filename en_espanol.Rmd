@@ -1,5 +1,16 @@
 ---
 title: "Panel de datos de la Coalición para Eliminar la Intoxicación por Plomo en Cleveland"
+navbar:
+  left:
+  - text: "Home"
+    href: index.html
+  - text: "Download some data"
+    href: data-download.html
+  right:
+  - text: "In English"
+    href: index.html
+ 
+output_dir: "."
 output: 
   html_document: 
     css: styles_index.css

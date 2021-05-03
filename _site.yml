@@ -6,8 +6,13 @@ navbar:
   - text: "Download some data"
     href: data-download.html
   right:
-  - text: "En español"
-    href: en_espanol.html
+  - text: Language
+    menu:
+    - text: "En español"
+      href: en_espanol.html
+    - text: "In English"
+      href: index.html
+      
 
 output_dir: "."
 output:
