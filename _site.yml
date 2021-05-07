@@ -5,6 +5,8 @@ navbar:
     href: index.html
   - text: "Download some data"
     href: data-download.html
+  - text: "Technical Notes & Documentation"
+    href: details.html
   right:
   - text: Language
     menu:
