@@ -35,7 +35,7 @@ Here are just a few of the questions the dashboard can help answer:
 
 <div class="card" style="width: 50 rem;">
   <ul class="list-group list-group-flush">
-    <li class="list-group-item" id="q1"><a href="https://cwru-urb-pov.shinyapps.io/lead_flexdashboard_shiny_may_6_2021_push/#section-baseline">How has the number of children poisoned by lead changed over time in Cleveland neighborhoods?</a></li>
+    <li class="list-group-item" id="q1"><a href="https://cwru-urb-pov.shinyapps.io/lead_flexdashboard_blank_3_30_2021/#section-baseline">How has the number of children poisoned by lead changed over time in Cleveland neighborhoods?</a></li>
      <li class="list-group-item" id="q2"><a href="https://cwru-urb-pov.shinyapps.io/lead_flexdashboard_blank_3_30_2021/#section-implementation-and-monitoring">How do lead screening and testing rates vary across the city over time?</a></li>
      </ul>
 </div>
