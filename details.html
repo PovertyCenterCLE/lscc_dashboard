@@ -11,7 +11,7 @@
 
 
 
-<title>Details</title>
+<title>Technical Documentation and Glossary of Terms</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -244,7 +244,10 @@ $(document).ready(function () {
   <a href="index.html">Home</a>
 </li>
 <li>
-  <a href="data-download.html">Download some data</a>
+  <a href="https://cwru-urb-pov.shinyapps.io/lscc_data_dashboard_beta/#section-baseline">View dashboard</a>
+</li>
+<li>
+  <a href="data-download.html">Download the data</a>
 </li>
 <li>
   <a href="details.html">Technical Notes &amp; Documentation</a>
@@ -275,12 +278,40 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Details</h1>
+<h1 class="title toc-ignore">Technical Documentation and Glossary of Terms</h1>
 
 </div>
 
 
-
+<div id="lead-poisoning" class="section level2">
+<h2>Lead Poisoning</h2>
+<p><strong>Percent of Children Tested:</strong></p>
+<p>All lead tests (both those done through a capillary puncture or venous lab draw) that are reported to the Ohio Department of Health (ODH) for children aged 0 to 6 residing in Cuyahoga County are provided to the Center on Urban Poverty and Community Development on an ongoing basis. The address of the child at the time of the test is included in the data from ODH.</p>
+<p>Venous tests are the only tests considered to be confirmatory by ODH. This dashboard only counts confirmed tests. If a child receives more than one test in a year, they are counted only once.</p>
+<p>Annual Census data from the American Communities Survey is used to calculate the number of children aged 0-3 and 0-6 at each geography available in the dashboard.</p>
+<p>The percent of children tested in each year is calculated by summing the number of children (0-3 and 0-6) with a confirmed test in each geography and dividing by the Census estimate of children (0-3 and 0-6) in that geography.</p>
+<p><strong>Percent of Children with an Elevated Blood Lead Level (EBLL) of those tested</strong></p>
+<p>An Elevated Blood Lead Level (EBLL) is defined according to the current standard of &gt;= 5 micrograms per deciliter. The standard used to be higher and may continue to trend downward. The data practice at the Center on Urban Poverty and Community Development is to retroactively flag previous testing data to modern standards.</p>
+<p>The number of children aged 0-3 and 0-6 with a confirmed EBLL in each year are summed by geography. This number is divided by the total number of children aged 0-3 and 0-6 tested each year. If a child receives more than one test screening or more than one EBLL in a year, they are counted only once.</p>
+<p>**Confidentiality*:**</p>
+<p>In order to avoid the possible disclosure of any confidential information of lead tested children, we are required by the Ohio Department of Health (ODH) to suppress data if the counts or rates do not meet certain thresholds. The rules for suppression are as follows:</p>
+<p><strong>1)</strong> Any lead related indicator (i.e. % tested, % of children with an elevated blood lead level (EBLL)) with a count of less than 10 (and its corresponding rate) in any geographic area (i.e. zip code, neighborhood, rollout zone);</p>
+<p><strong>2)</strong> In order to adhere to specific ODH policy, we also suppress rates when the difference between the numerator and denominator is less than 10. For example, if there are 10 children in a geographic area and 9 of them have an EBLL, we would suppress the rate. While we cannot provide the rates, the user does have some information – rate suppression indicates that the rate is high. In this case the user knows this particular area must have a high rate of lead poisoned children.</p>
+<p>For more information on ODH guidelines: <a href="https://odh.ohio.gov/wps/portal/gov/odh/explore-data-and-stats/resources/Disclosure-Limitation-Standard" class="uri">https://odh.ohio.gov/wps/portal/gov/odh/explore-data-and-stats/resources/Disclosure-Limitation-Standard</a></p>
+<p><em>The lead data used in this dashboard come from the Ohio Department of Health. This should not be considered an endorsement of this study or these conclusions by the Ohio Department of Health.</em></p>
+</div>
+<div id="housing-market" class="section level2">
+<h2>Housing Market</h2>
+<p><strong>Rental Registrations</strong></p>
+<p>Intake rental registration records are provided to the Center on Urban Poverty and Community Development from the City of Cleveland Department of Building and Housing. Data are cleaned and standardized so that address and parcel numbers are consistent. Records without parcel numbers are geocoded to a building location and spatially matched to a parcel.</p>
+<p>Records are then coded to their Lead Safe Certification roll-out zone (1 through 8), neighborhood, and zip code. Records that can not be coded to a geography are coded as “unknown geography” and are not included in the dashboard numbers.</p>
+<p>Records are categorized as follows: records with a status of “renewed” or “registration renewed” are coded as “active,” records with a status of “expired” or “about to expire” are coded as “noncompliant,” and records with the status of “closed” or “no renewal” are coded as “closed.” Records with any other status are dropped; these are most often test records, records that were created mistakenly, and other instances that do not represent a valid rental registration.</p>
+<p>Two types of duplicate records are then removed. The first are records with the same unique identifier, workflow status update and date. Second, a set of unique parcel-addresses and deduplicate rental registration IDs based on unique parcel-addresses is created. We use the parcel-address because a given parcel can have multiple addresses associated with it, and each can be a valid record. Multiple rental registrations can be associated with a given parcel-address and at times the records are duplicates and/or can overlap one time-wise. We prioritize keeping the record of a property with an active status. The aim here is to create the most consistent depiction of a given property’s rental status over time.</p>
+<p>Annual/quarterly counts of rental registration records by record status and geographies of interest are then created. Indicators are coded based on the last status in the given quarter. Yearly indicators prioritize the active status, counting a property as active if it is active for any portion of the year.</p>
+<p><strong>Evictions</strong></p>
+<p>Cleveland Municipal Court eviction cases counts are scraped weekly from the online court docket system and compiled. These data contain filing records and attributes associated with the filing, docket entry records, and event records. The addresses subject to the eviction filing are geocoded and assigned to geographies of interest. Filing records, docket entries, and event records are linked together. We search docket entries and event records for move-outs scheduled to create a flat file of eviction filings and move-outs scheduled. A move-out can be scheduled when a judgment is found for the plaintiff in the eviction case, and the plaintiff purchases a writ of restitution and schedules a move-out with the court. Counts of filings and move-outs scheduled are compiled by geographies of interest.</p>
+<p>Because properties owned by Cleveland Municipal Housing Authority (CMHA) are not subject to rental registration nor the lead safe ordinance, eviction cases in which CMHA is the plaintiff have been excluded from the counts listed in the dashboard.</p>
+</div>
 
 
 

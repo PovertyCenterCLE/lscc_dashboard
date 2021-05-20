@@ -37,7 +37,7 @@ La mayoría de las casas construidas antes de 1978 usaban pintura con plomo, lo 
 
 <br>
  
-El [Panel de Datos de la La Coalición](https://cwru-urb-pov.shinyapps.io/lead_flexdashboard_blank_3_30_2021/) para Eliminar la Intoxicación por Plomo en Cleveland  ofrece respuestas a preguntas comunes e información sobre la implementación de esta nueva ley y cómo está afectando a los niños, las familias y los vecindarios.
+El [Panel de Datos de la La Coalición](https://cwru-urb-pov.shinyapps.io/lscc_data_dashboard_beta/) para Eliminar la Intoxicación por Plomo en Cleveland  ofrece respuestas a preguntas comunes e información sobre la implementación de esta nueva ley y cómo está afectando a los niños, las familias y los vecindarios.
 
 <br>
  
@@ -48,8 +48,8 @@ Estas son solo algunas de las preguntas que el tablero puede ayudar a responder:
 
 <div class="card" style="width: 50 rem;">
   <ul class="list-group list-group-flush">
-    <li class="list-group-item" id="q1"><a href="https://cwru-urb-pov.shinyapps.io/lead_flexdashboard_blank_3_30_2021/#section-baseline">¿Cómo ha cambiado la cantidad de niños envenenados por plomo a lo largo del tiempo en los vecindarios de Cleveland? </a></li>
-     <li class="list-group-item" id="q2"><a href="https://cwru-urb-pov.shinyapps.io/lead_flexdashboard_blank_3_30_2021/#section-implementation-and-monitoring">¿Cómo varían las tasas de detección y prueba de plomo en la ciudad a lo largo del tiempo?</a></li>
+    <li class="list-group-item" id="q1"><a href="https://cwru-urb-pov.shinyapps.io/lscc_data_dashboard_beta/#section-baseline">¿Cómo ha cambiado la cantidad de niños envenenados por plomo a lo largo del tiempo en los vecindarios de Cleveland? </a></li>
+     <li class="list-group-item" id="q2"><a href="https://cwru-urb-pov.shinyapps.io/lscc_data_dashboard_beta/#section-baseline">¿Cómo varían las tasas de detección y prueba de plomo en la ciudad a lo largo del tiempo?</a></li>
      </ul>
 </div>
 
@@ -58,8 +58,8 @@ Estas son solo algunas de las preguntas que el tablero puede ayudar a responder:
 
 <div class="card" style="width: 50 rem;">
   <ul class="list-group list-group-flush">
-    <li class="list-group-item" id="q3"><a href="https://cwru-urb-pov.shinyapps.io/lead_flexdashboard_blank_3_30_2021/#section-baseline">¿Cuántos desalojos y órdenes de mudanza se han producido en mi vecindario?</a></li>
-     <li class="list-group-item" id="q4"><a href="https://cwru-urb-pov.shinyapps.io/lead_flexdashboard_blank_3_30_2021/#section-implementation-and-monitoring">¿Cuántas propiedades de alquiler han sido certificadas como seguras para el plomo?</a></li>
+    <li class="list-group-item" id="q3"><a href="https://cwru-urb-pov.shinyapps.io/lscc_data_dashboard_beta/#section-baseline-1">¿Cuántos desalojos y órdenes de mudanza se han producido en mi vecindario?</a></li>
+     <li class="list-group-item" id="q4"><a href="https://cwru-urb-pov.shinyapps.io/lscc_data_dashboard_beta/#section-implementation-and-monitoring-1">¿Cuántas propiedades de alquiler han sido certificadas como seguras para el plomo?</a></li>
      </ul>
 </div>
 
@@ -67,8 +67,8 @@ Estas son solo algunas de las preguntas que el tablero puede ayudar a responder:
 
 <div class="card" style="width: 50 rem;">
   <ul class="list-group list-group-flush">
-    <li class="list-group-item" id="q5"><a href="https://cwru-urb-pov.shinyapps.io/lead_flexdashboard_blank_3_30_2021/#section-baseline">¿Cuántos propietarios han recibido préstamos o subvenciones para que su propiedad sea segura con el plomo?</a></li>
-     <li class="list-group-item" id="q6"><a href="https://cwru-urb-pov.shinyapps.io/lead_flexdashboard_blank_3_30_2021/#section-implementation-and-monitoring">¿Cuántos profesionales han sido capacitados y certificados para detectar plomo en los hogares?</a></li>
+    <li class="list-group-item" id="q5"><a  href="https://cwru-urb-pov.shinyapps.io/lscc_data_dashboard_beta/#section-lead-safe-resource-center">¿Cuántos profesionales han sido capacitados y certificados para detectar plomo en los hogares? </a></li>
+     <li class="list-group-item" id="q6"><a href="https://cwru-urb-pov.shinyapps.io/lscc_data_dashboard_beta/#section-lead-safe-loans-and-grants">¿Cuántos propietarios han recibido préstamos o subvenciones para que su propiedad sea segura con el plomo? </a></li>
      </ul>
 </div>
 
@@ -77,7 +77,7 @@ Estas son solo algunas de las preguntas que el tablero puede ayudar a responder:
 
 <div class="card" style="width: 50 rem;">
   <ul class="list-group list-group-flush">
-    <li class="list-group-item" id="q7"><a href="https://cwru-urb-pov.shinyapps.io/lead_flexdashboard_blank_3_30_2021/#section-development-advocacy">¿Cuánto dinero ha recaudado la Coalición para Eliminar la Intoxicación por Plomo en Cleveland?</a></li>
+    <li class="list-group-item" id="q7"><a href="https://cwru-urb-pov.shinyapps.io/lscc_data_dashboard_beta/#section-development-advocacy">¿Cuánto dinero ha recaudado la Coalición para Eliminar la Intoxicación por Plomo en Cleveland?</a></li>
 </div>
 
 

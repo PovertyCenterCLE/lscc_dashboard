@@ -15,23 +15,26 @@ library(readxl)
 library(shiny)
 ```
   
-By downloading any of the datasets below, you are agreeing that you will not use it for nefarious reasons. We want to add a better disclaimer here probably...  
+All indicators are processed by the Center on Urban Poverty and Community Development.
+ 
+To cite the data in the Lead Safe Cleveland Coalition Dashboard, first be sure you're aware of what geography you're looking at for the indicator you wish to cite, and also be aware of the time period of the data you wish to cite. Then, follow this citation guide:
 
-  
+[Name of indicator], [geography of indicator],[time period of indicator]. [Data source of indicator]. Analysis by Center on Urban Poverty and Community Development, Jack, Joseph and Morton Mandel School of Applied Social Sciences, Case Western Reserve University. Accessed through the Lead Safe Cleveland Coalition Dashboard, [date accessed].
+
   
 ## Lead Poisoning Data  
   
 By Zip code:
 
 ```{r, echo=FALSE}
-data <-  read_excel(here("data", "popest0to3_16_17_18_Cle_Zip_Race_test.xlsx"), sheet="zip_flat") 
+lead_zip <-  read_excel(here("data", "lead_zip.xlsx")) 
 downloadButton("downloadNormal", "Download the data:", class = "butt1")
 
 downloadHandler(
     filename = "Lead_Poisoning_By_Zip.xlsx",
 
     content = function(file) {
-        write_xlsx(data, file)
+        write_xlsx(lead_zip, file)
     },
     contentType = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
 
@@ -40,14 +43,14 @@ downloadHandler(
 By Neighborhood:
 
 ```{r, echo=FALSE}
-data <-  read_excel(here("data", "popest0to3_16_17_18_Cle_Zip_Race_test.xlsx"), sheet="nhood_flat") 
+lead_nhood <-  read_excel(here("data", "lead_nhood.xlsx")) 
 downloadButton("downloadNormal", "Download the data:", class = "butt1")
 
 downloadHandler(
     filename = "Lead_Poisoning_By_Neighborhood.xlsx",
 
     content = function(file) {
-        write_xlsx(data, file)
+        write_xlsx(lead_nhood, file)
     },
     contentType = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
 
@@ -56,26 +59,95 @@ downloadHandler(
 By Zone:
 
 ```{r, echo=FALSE}
-data <-  read_excel(here("data", "popest0to3_16_17_18_Cle_Zip_Race_test.xlsx"), sheet="zone_flat") 
+lead_zone <-  read_excel(here("data", "lead_zone.xlsx")) 
 downloadButton("downloadNormal", "Download the data:", class = "butt1")
 
 downloadHandler(
     filename = "Lead_Poisoning_By_Zone.xlsx",
 
     content = function(file) {
-        write_xlsx(data, file)
+        write_xlsx(lead_zone, file)
     },
     contentType = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
 
 ```
   
-  
-  
-## Housing Market
+City of Cleveland (aggregated):
 
-```{r}
+```{r, echo=FALSE}
+lead_city <-  read_excel(here("data", "lead_cleveland.xlsx")) 
+downloadButton("downloadNormal", "Download the data:", class = "butt1")
+
+downloadHandler(
+    filename = "Lead_Poisoning_Cleveland.xlsx",
+
+    content = function(file) {
+        write_xlsx(lead_city, file)
+    },
+    contentType = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
+
+``` 
+
+ 
+ 
+Only census tracts within the City of Cleveland boundaries are included in the zip code and rollout-zone level analyses. Population estimates were generated using the 2010 U.S. Census Bureau age proportions benchmarked to the City of Cleveland population from the 2017-2019 American Communities Survey, 1 year estimates. For more information, see the technical documentation. 
+
+The lead data come from the Ohio Department of Health. This should not be considered an endorsement of this study of these conclusions by the Ohio Department of Health. In order to avoid the possible disclosure of any confidential information of lead tested children, we are required by the Ohio Department of Health (ODH) to suppress data if the counts or rates do not meet certain thresholds. The files available for download follow this suppression policy. 
+
+For more information on ODH guidelines click [here](https://odh.ohio.gov/wps/portal/gov/odh/explore-data-and-stats/resources/Disclosure-Limitation-Standard).
+
+
+## Housing Data  
+  
+By Zip code:
+
+```{r, echo=FALSE}
+rent_zip <-  read_excel(here("data", "rent_zip.xlsx")) 
+downloadButton("downloadNormal", "Download the data:", class = "butt1")
+
+downloadHandler(
+    filename = "Rentals_By_Zip.xlsx",
+
+    content = function(file) {
+        write_xlsx(rent_zip, file)
+    },
+    contentType = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
 
 ```
 
+By Neighborhood:
 
+```{r, echo=FALSE}
+rent_nhood <-  read_excel(here("data", "rent_nhood.xlsx")) 
+downloadButton("downloadNormal", "Download the data:", class = "butt1")
+
+downloadHandler(
+    filename = "Rentals_By_Neighborhood.xlsx",
+
+    content = function(file) {
+        write_xlsx(rent_nhood, file)
+    },
+    contentType = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
+
+```
+  
+By Zone:
+
+```{r, echo=FALSE}
+rent_zone <-  read_excel(here("data", "rent_zone.xlsx")) 
+downloadButton("downloadNormal", "Download the data:", class = "butt1")
+
+downloadHandler(
+    filename = "Rentals_By_Zone.xlsx",
+
+    content = function(file) {
+        write_xlsx(rent_zone, file)
+    },
+    contentType = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
+
+```
+  
+   
+   
+Only census tracts within the City of Cleveland boundaries are included in the zip code and rollout-zone level analyses. Rental Registrations: Intake rental registration records are provided to the Center on Urban Poverty and Community Development from the City of Cleveland Department of Building and Housing. Data are cleaned and standardized so that address and parcel numbers are consistent. Records without parcel numbers are geocoded to a building location and spatially matched to a parcel. Annual/quarterly counts of rental registration records by record status and geographies of interest are then created. Indicators are coded based on the last status in the given quarter. Yearly indicators prioritize the active status, counting a property as active if it is active for any portion of the year. Evictions: Cleveland Municipal Court eviction cases counts are scraped weekly from the online court docket system and compiled.  These data contain filing records and attributes associated with the filing, docket entry records, and event records. The addresses subject to the eviction filing are geocoded and assigned to geographies of interest. Counts of filings and move-outs scheduled are compiled by geographies of interest. Because properties owned by Cleveland Municipal Housing Authority (CMHA) are not subject to rental registration nor the lead safe ordinance, eviction cases in which CMHA is the plaintiff have been excluded from the counts listed in the dashboard. For more information, see the technical documentation. 
 
