@@ -66,6 +66,16 @@ download_link(
 
 
 <br>
+
+#### Lead data notes
+
+Only census tracts within the City of Cleveland boundaries are included in the zip code and rollout-zone level analyses. Population estimates were generated using the 2010 U.S. Census Bureau age proportions benchmarked to the City of Cleveland population from the 2017-2019 American Communities Survey, 1 year estimates. For more information, see the technical documentation. 
+
+The lead data come from the Ohio Department of Health. This should not be considered an endorsement of this study of these conclusions by the Ohio Department of Health. In order to avoid the possible disclosure of any confidential information of lead tested children, we are required by the Ohio Department of Health (ODH) to suppress data if the counts or rates do not meet certain thresholds. The files available for download follow this suppression policy. 
+
+For more information on ODH guidelines click [here](https://odh.ohio.gov/wps/portal/gov/odh/explore-data-and-stats/resources/Disclosure-Limitation-Standard).
+
+<br>
 <br>
 
 ## Housing Data
@@ -102,6 +112,17 @@ download_link(
 ```
 
 
+<br>
+
+
+
+#### Housing data notes
+
+Only census tracts within the City of Cleveland boundaries are included in the zip code and rollout-zone level analyses. 
+
+* Rental Registrations: Intake rental registration records are provided to the Center on Urban Poverty and Community Development from the City of Cleveland Department of Building and Housing. Data are cleaned and standardized so that address and parcel numbers are consistent. Records without parcel numbers are geocoded to a building location and spatially matched to a parcel. Annual/quarterly counts of rental registration records by record status and geographies of interest are then created. Indicators are coded based on the last status in the given quarter. Yearly indicators prioritize the active status, counting a property as active if it is active for any portion of the year. 
+
+* Evictions: Cleveland Municipal Court eviction cases counts are scraped weekly from the online court docket system and compiled.  These data contain filing records and attributes associated with the filing, docket entry records, and event records. The addresses subject to the eviction filing are geocoded and assigned to geographies of interest. Counts of filings and move-outs scheduled are compiled by geographies of interest. Because properties owned by Cleveland Municipal Housing Authority (CMHA) are not subject to rental registration nor the lead safe ordinance, eviction cases in which CMHA is the plaintiff have been excluded from the counts listed in the dashboard. For more information, see the technical documentation. 
 
 
 
