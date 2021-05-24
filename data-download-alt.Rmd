@@ -1,0 +1,107 @@
+---
+title: "LSCC Data Downloads"
+runtime: shiny
+output: html_document
+---
+
+
+
+```{r initial_setup, echo=FALSE, cache=FALSE, message = FALSE, warning = FALSE}
+library(downloadthis)
+```
+  
+All indicators are processed by the Center on Urban Poverty and Community Development.
+ 
+To cite the data in the Lead Safe Cleveland Coalition Dashboard, first be sure you're aware of what geography you're looking at for the indicator you wish to cite, and also be aware of the time period of the data you wish to cite. Then, follow this citation guide:
+
+[Name of indicator], [geography of indicator],[time period of indicator]. [Data source of indicator]. Analysis by Center on Urban Poverty and Community Development, Jack, Joseph and Morton Mandel School of Applied Social Sciences, Case Western Reserve University. Accessed through the Lead Safe Cleveland Coalition Dashboard, [date accessed].
+
+<br>
+
+## Lead Poisoning Data  
+
+<br>
+
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+download_link(
+  link = "https://drive.google.com/uc?export=download&id=1socU8nelYQM6GFkPBDs6GExCXpl3XBo6", 
+  button_label = "Lead data by rollout zone", 
+  button_type = "success",
+  has_icon = TRUE,
+  icon = "fa fa-save")
+
+htmltools::br()
+
+download_link(
+  link = "https://drive.google.com/uc?export=download&id=1UF_acSBqzf1wdcqsTB5w8s5zYRbS1V9H", 
+  button_label = "Lead data by zip code", 
+  button_type = "success",
+  has_icon = TRUE,
+  icon = "fa fa-save")
+
+htmltools::br()
+
+download_link(
+  link = "https://drive.google.com/uc?export=download&id=1h7AflR2LhjuqeecVDgd3XT9QwnuFPBSD", 
+  button_label = "Lead data by neighborhood (SPA)", 
+  button_type = "success",
+  has_icon = TRUE,
+  icon = "fa fa-save")
+
+htmltools::br()
+
+
+download_link(
+  link = "https://drive.google.com/uc?export=download&id=1Cw_kEyvbxJ022X1ugC98_gBN0ltFR7n0", 
+  button_label = "Lead data for Cleveland", 
+  button_type = "success",
+  has_icon = TRUE,
+  icon = "fa fa-save")
+
+
+
+
+```
+
+
+<br>
+<br>
+
+## Housing Data
+
+<br>
+
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+download_link(
+  link = "https://drive.google.com/uc?export=download&id=10CLBx-WFt21greF9QeltJU1V3T2Halbd", 
+  button_label = "Housing data by rollout zone", 
+  button_type = "success",
+  has_icon = TRUE,
+  icon = "fa fa-save")
+
+htmltools::br()
+
+download_link(
+  link = "https://drive.google.com/uc?export=download&id=1AN4eyIvuMOi6lotPNSTpYG_Z_k3lh-kd", 
+  button_label = "Housing data by zip code", 
+  button_type = "success",
+  has_icon = TRUE,
+  icon = "fa fa-save")
+
+htmltools::br()
+
+download_link(
+  link = "https://drive.google.com/uc?export=download&id=1NG8eHqVP07MMEmw8ZMhCXkKkS21cwQaW", 
+  button_label = "Housing data by neighborhood (SPA)", 
+  button_type = "success",
+  has_icon = TRUE,
+  icon = "fa fa-save")
+
+```
+
+
+
+
+

@@ -10,6 +10,7 @@ output: html_document
 library(downloadthis)
 library(here)
 library(leafpop)
+library(googlesheets4)
 library(writexl)
 library(readxl)
 library(shiny)
@@ -27,64 +28,100 @@ To cite the data in the Lead Safe Cleveland Coalition Dashboard, first be sure y
 By Zip code:
 
 ```{r, echo=FALSE}
-lead_zip <-  read_excel(here("data", "lead_zip.xlsx")) 
-downloadButton("downloadNormal", "Download the data:", class = "butt1")
+# lead_zip <-  read_excel(here("data", "lead_zip.xlsx")) 
+# downloadButton("downloadNormal", "Download the data:", class = "butt1")
+# 
+# downloadHandler(
+#     filename = "Lead_Poisoning_By_Zip.xlsx",
+# 
+#     content = function(file) {
+#         write_xlsx(lead_zip, file)
+#     },
+#     contentType = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
 
-downloadHandler(
-    filename = "Lead_Poisoning_By_Zip.xlsx",
+download_link(
+  link = "https://drive.google.com/uc?export=download&id=1UF_acSBqzf1wdcqsTB5w8s5zYRbS1V9H", 
+  button_label = "Download Lead by Zip", 
+  button_type = "success",
+  has_icon = TRUE,
+  icon = "fa fa-save")
 
-    content = function(file) {
-        write_xlsx(lead_zip, file)
-    },
-    contentType = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
 
 ```
 
 By Neighborhood:
 
 ```{r, echo=FALSE}
-lead_nhood <-  read_excel(here("data", "lead_nhood.xlsx")) 
-downloadButton("downloadNormal", "Download the data:", class = "butt1")
+# lead_nhood <-  read_excel(here("data", "lead_nhood.xlsx")) 
+# downloadButton("downloadNormal", "Download the data:", class = "butt1")
+# 
+# downloadHandler(
+#     filename = "Lead_Poisoning_By_Neighborhood.xlsx",
+# 
+#     content = function(file) {
+#         write_xlsx(lead_nhood, file)
+#     },
+#     contentType = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
 
-downloadHandler(
-    filename = "Lead_Poisoning_By_Neighborhood.xlsx",
+download_link(
+  link = "https://drive.google.com/uc?export=download&id=1Cw_kEyvbxJ022X1ugC98_gBN0ltFR7n0", 
+  button_label = "Download Lead by Zip", 
+  button_type = "success",
+  has_icon = TRUE,
+  icon = "fa fa-save")
 
-    content = function(file) {
-        write_xlsx(lead_nhood, file)
-    },
-    contentType = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
+
+
 
 ```
   
 By Zone:
 
 ```{r, echo=FALSE}
-lead_zone <-  read_excel(here("data", "lead_zone.xlsx")) 
-downloadButton("downloadNormal", "Download the data:", class = "butt1")
+# lead_zone <-  read_excel(here("data", "lead_zone.xlsx")) 
+# downloadButton("downloadNormal", "Download the data:", class = "butt1")
+# 
+# downloadHandler(
+#     filename = "Lead_Poisoning_By_Zone.xlsx",
+# 
+#     content = function(file) {
+#         write_xlsx(lead_zone, file)
+#     },
+#     contentType = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
 
-downloadHandler(
-    filename = "Lead_Poisoning_By_Zone.xlsx",
+download_link(
+  link = "https://drive.google.com/uc?export=download&id=1Cw_kEyvbxJ022X1ugC98_gBN0ltFR7n0", 
+  button_label = "Download Lead by Zip", 
+  button_type = "success",
+  has_icon = TRUE,
+  icon = "fa fa-save")
 
-    content = function(file) {
-        write_xlsx(lead_zone, file)
-    },
-    contentType = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
+
 
 ```
   
 City of Cleveland (aggregated):
 
 ```{r, echo=FALSE}
-lead_city <-  read_excel(here("data", "lead_cleveland.xlsx")) 
-downloadButton("downloadNormal", "Download the data:", class = "butt1")
+# lead_city <-  read_excel(here("data", "lead_cleveland.xlsx")) 
+# downloadButton("downloadNormal", "Download the data:", class = "butt1")
+# 
+# downloadHandler(
+#     filename = "Lead_Poisoning_Cleveland.xlsx",
+# 
+#     content = function(file) {
+#         write_xlsx(lead_city, file)
+#     },
+#     contentType = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
 
-downloadHandler(
-    filename = "Lead_Poisoning_Cleveland.xlsx",
+download_link(
+  link = "https://drive.google.com/uc?export=download&id=1Cw_kEyvbxJ022X1ugC98_gBN0ltFR7n0", 
+  button_label = "Download Lead by Zip", 
+  button_type = "success",
+  has_icon = TRUE,
+  icon = "fa fa-save")
 
-    content = function(file) {
-        write_xlsx(lead_city, file)
-    },
-    contentType = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
+
 
 ``` 
 
@@ -102,48 +139,75 @@ For more information on ODH guidelines click [here](https://odh.ohio.gov/wps/por
 By Zip code:
 
 ```{r, echo=FALSE}
-rent_zip <-  read_excel(here("data", "rent_zip.xlsx")) 
-downloadButton("downloadNormal", "Download the data:", class = "butt1")
+# rent_zip <-  read_excel(here("data", "rent_zip.xlsx")) 
+# downloadButton("downloadNormal", "Download the data:", class = "butt1")
+# 
+# downloadHandler(
+#     filename = "Rentals_By_Zip.xlsx",
+# 
+#     content = function(file) {
+#         write_xlsx(rent_zip, file)
+#     },
+#     contentType = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
 
-downloadHandler(
-    filename = "Rentals_By_Zip.xlsx",
+download_link(
+  link = "https://drive.google.com/uc?export=download&id=1Cw_kEyvbxJ022X1ugC98_gBN0ltFR7n0", 
+  button_label = "Download Lead by Zip", 
+  button_type = "success",
+  has_icon = TRUE,
+  icon = "fa fa-save")
 
-    content = function(file) {
-        write_xlsx(rent_zip, file)
-    },
-    contentType = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
+
 
 ```
 
 By Neighborhood:
 
 ```{r, echo=FALSE}
-rent_nhood <-  read_excel(here("data", "rent_nhood.xlsx")) 
-downloadButton("downloadNormal", "Download the data:", class = "butt1")
+# rent_nhood <-  read_excel(here("data", "rent_nhood.xlsx")) 
+# downloadButton("downloadNormal", "Download the data:", class = "butt1")
+# 
+# downloadHandler(
+#     filename = "Rentals_By_Neighborhood.xlsx",
+# 
+#     content = function(file) {
+#         write_xlsx(rent_nhood, file)
+#     },
+#     contentType = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
 
-downloadHandler(
-    filename = "Rentals_By_Neighborhood.xlsx",
+download_link(
+  link = "https://drive.google.com/uc?export=download&id=1Cw_kEyvbxJ022X1ugC98_gBN0ltFR7n0", 
+  button_label = "Download Lead by Zip", 
+  button_type = "success",
+  has_icon = TRUE,
+  icon = "fa fa-save")
 
-    content = function(file) {
-        write_xlsx(rent_nhood, file)
-    },
-    contentType = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
+
 
 ```
   
 By Zone:
 
 ```{r, echo=FALSE}
-rent_zone <-  read_excel(here("data", "rent_zone.xlsx")) 
-downloadButton("downloadNormal", "Download the data:", class = "butt1")
+# rent_zone <-  read_excel(here("data", "rent_zone.xlsx")) 
+# downloadButton("downloadNormal", "Download the data:", class = "butt1")
+# 
+# downloadHandler(
+#     filename = "Rentals_By_Zone.xlsx",
+# 
+#     content = function(file) {
+#         write_xlsx(rent_zone, file)
+#     },
+#     contentType = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
 
-downloadHandler(
-    filename = "Rentals_By_Zone.xlsx",
+download_link(
+  link = "https://drive.google.com/uc?export=download&id=1Cw_kEyvbxJ022X1ugC98_gBN0ltFR7n0", 
+  button_label = "Download Lead by Zip", 
+  button_type = "success",
+  has_icon = TRUE,
+  icon = "fa fa-save")
 
-    content = function(file) {
-        write_xlsx(rent_zone, file)
-    },
-    contentType = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
+
 
 ```
   

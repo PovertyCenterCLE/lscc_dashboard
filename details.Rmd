@@ -26,7 +26,7 @@ An Elevated Blood Lead Level (EBLL) is defined according to the current standard
 The number of children aged 0-3 and 0-6 with a confirmed EBLL in each year are summed by geography.  This number is divided by the total number of children aged 0-3 and 0-6 tested each year.  If a child receives more than one test screening or more than one EBLL in a year, they are counted only once.
 
 
-**Confidentiality*:**
+**Confidentiality\*:**
 
 In order to avoid the possible disclosure of any confidential information of  lead tested children, we are required by the Ohio Department of Health (ODH) to suppress data if the counts or rates do not meet certain thresholds. The rules for suppression are as follows:
  
@@ -37,7 +37,7 @@ In order to avoid the possible disclosure of any confidential information of  le
 For more information on ODH guidelines: https://odh.ohio.gov/wps/portal/gov/odh/explore-data-and-stats/resources/Disclosure-Limitation-Standard
 
 
-*The lead data used in this dashboard come from the Ohio Department of Health. This should not be considered an endorsement of this study or these conclusions by the Ohio Department of Health.*
+\**The lead data used in this dashboard come from the Ohio Department of Health. This should not be considered an endorsement of this study or these conclusions by the Ohio Department of Health.*
 
  
 
