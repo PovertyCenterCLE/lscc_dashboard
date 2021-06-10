@@ -9,6 +9,8 @@ navbar:
     href: data-download-alt.html
   - text: "Technical Notes & Documentation"
     href: details.html
+  - text: "Key Takeaways"
+    href: takeaways.html
   right:
   - text: Language
     menu:
