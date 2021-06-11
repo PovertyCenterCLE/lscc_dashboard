@@ -1,6 +1,8 @@
 ---
-title: "Key Takeaways"
+title: "Key Findings"
 output: html_document
 ---
 
-To be updated monthly
+Research briefs, reports, and published manuscripts providing key information about the lead and housing landscape in Cleveland can be accessed on the [Center on Urban Poverty and Community Development's Lead Safe Research page](https://case.edu/socialwork/povertycenter/our-work/lead-safe-research).
+
+As Cleveland's lead ordinance is implemented between now and March 2023, check back here for updated quarterly analysis and findings.
