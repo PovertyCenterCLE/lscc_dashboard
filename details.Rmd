@@ -64,8 +64,33 @@ Cleveland Municipal Court eviction cases counts are scraped weekly from the onli
 
 Because properties owned by Cleveland Municipal Housing Authority (CMHA) are not subject to rental registration nor the lead safe ordinance, eviction cases in which CMHA is the plaintiff have been excluded from the counts listed in the dashboard.
 
+## Loans and Grants
 
+The loans and grants data is provided by CHN Housing Partners on a quarterly basis.
 
+**Application/Project Status**
 
+`Application inactive` includes applications that are referred elsewhere, that choose to withdraw for any reason, or that are determined to be ineligible. 
+`Application opened` includes applications that are pending submission.
+`Application in review` includes applications that have been submitted and are under review with CHN or are on a wait list until additional materials are provided. 
+`Project Active` includes applications that have been accepted for funding and are now in the construction management pipeline. 
+`Project complete` includes projects that have achieved lead clearance.
 
+**Funding Suppression**
 
+Following CHN guidelines, funding total and average are suppressed if there are 3 or fewer units with an estimated funding award in a particular geography. 
+
+## Resource Center
+
+The Resource Center data is provided by Environmental Health Watch (EHW) on a quarterly basis. 
+
+**Contact Type**
+
+`Tenant` is an individual who is renting their house or apartment.
+`Landlord` is an individual who owns a house or apartment and rents it to someone else. 
+`Home Owner` is an individual who owns a house or apartment and lives in it themselves. 
+`Anonymous Contact` is an individual who chose not to share their contact type with the Resource Center.
+
+Definitions for Contact Interest Area, and Training categories are coming soon. 
+
+An additional Community Engagement Metric is coming soon.
