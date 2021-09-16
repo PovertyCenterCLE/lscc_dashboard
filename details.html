@@ -13,7 +13,6 @@
 
 <title>Technical Documentation</title>
 
-<script src="site_libs/header-attrs-2.9/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
@@ -318,6 +317,14 @@ $(document).ready(function () {
 <p><strong>Evictions</strong></p>
 <p>Cleveland Municipal Court eviction cases counts are scraped weekly from the online court docket system and compiled. These data contain filing records and attributes associated with the filing, docket entry records, and event records. The addresses subject to the eviction filing are geocoded and assigned to geographies of interest. Filing records, docket entries, and event records are linked together. We search docket entries and event records for move-outs scheduled to create a flat file of eviction filings and move-outs scheduled. A move-out can be scheduled when a judgment is found for the plaintiff in the eviction case, and the plaintiff purchases a writ of restitution and schedules a move-out with the court. Counts of filings and move-outs scheduled are compiled by geographies of interest.</p>
 <p>Because properties owned by Cleveland Municipal Housing Authority (CMHA) are not subject to rental registration nor the lead safe ordinance, eviction cases in which CMHA is the plaintiff have been excluded from the counts listed in the dashboard.</p>
+</div>
+<div id="lead-safe-certification" class="section level2">
+<h2>Lead Safe Certification</h2>
+<p>Lead Safe Certification records are provided to the Center on Urban Poverty and Community Development from the City of Cleveland Department of Building and Housing. Data are cleaned and standardized so that address and parcel numbers are consistent. Records without parcel numbers are geocoded to a building location and spatially matched to a parcel when possible.</p>
+<p>Records are then coded to their Lead Safe Certification roll-out zone (1 through 8), neighborhood, and zip code. Records that can not be linked to a geography are coded as “unknown geography” and are not included in the dashboard numbers.</p>
+<p>The owner of a rental property submits an application to the Department of Building and Housing to get a lead safe certification for their property. The records provided to the Center on Urban Poverty and Community Development organize submitted applications into four categories to reflect the current status of the application: Pass, Fail, Pending, and Exempt.</p>
+<p>Properties with a status of ‘Pass’ are those that have undergone inspection by the Department of Building and Housing and found to be lead safe. If the inspection identifies sources of potential lead exposure on the property, the property owner must first take the appropriate control measures to address the source of exposure.</p>
+<p>Exempt properties include those for which an application for lead safe certification was submitted to the Department of Building and Housing, but a review of the property determined it was not subject to the requirements of the lead safe legislation. Typically, these are rental properties built after 1978 or properties that are owner-occupied.</p>
 </div>
 <div id="loans-and-grants" class="section level2">
 <h2>Loans and Grants</h2>

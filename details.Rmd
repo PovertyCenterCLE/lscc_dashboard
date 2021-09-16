@@ -64,6 +64,24 @@ Cleveland Municipal Court eviction cases counts are scraped weekly from the onli
 
 Because properties owned by Cleveland Municipal Housing Authority (CMHA) are not subject to rental registration nor the lead safe ordinance, eviction cases in which CMHA is the plaintiff have been excluded from the counts listed in the dashboard.
 
+
+## Lead Safe Certification
+
+Lead Safe Certification records are provided to the Center on Urban Poverty and Community Development from the City of Cleveland Department of Building and Housing.  Data are cleaned and standardized so that address and parcel numbers are consistent. Records without parcel numbers are geocoded to a building location and spatially matched to a parcel when possible.
+
+Records are then coded to their Lead Safe Certification roll-out zone (1 through 8), neighborhood, and zip code. Records that can not be linked to a geography are coded as “unknown geography” and are not included in the dashboard numbers. 
+
+The owner of a rental property submits an application to the Department of Building and Housing to get a lead safe certification for their property. The records provided to the Center on Urban Poverty and Community Development organize submitted applications into four categories to reflect the current status of the application: Pass, Fail, Pending, and Exempt. 
+
+Properties with a status of 'Pass' are those that have undergone inspection by the Department of Building and Housing and found to be lead safe. If the inspection identifies sources of potential lead exposure on the property, the property owner must first take the appropriate control measures to address the source of exposure.
+
+Exempt properties include those for which an application for lead safe certification was submitted to the Department of Building and Housing, but a review of the property determined it was not subject to the requirements of the lead safe legislation. Typically, these are rental properties built after 1978 or properties that are owner-occupied.
+
+
+
+
+
+
 ## Loans and Grants
 
 The loans and grants data is provided by CHN Housing Partners on a quarterly basis.
