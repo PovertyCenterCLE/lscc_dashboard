@@ -5,4 +5,24 @@ output: html_document
 
 Research briefs, reports, and published manuscripts providing key information about the lead and housing landscape in Cleveland can be accessed on the [Center on Urban Poverty and Community Development's Lead Safe Research page](https://case.edu/socialwork/povertycenter/our-work/lead-safe-research).
 
-As Cleveland's lead ordinance is implemented between now and March 2023, check back here for updated quarterly analysis and findings.
+
+**Lead Safe Resource Center**
+
+* We see a steady increase in the number of new callers in each quarter.  In Q2 2021, there were 717 callers, up from 419 in Q1 2021.  The majority of callers were seeking assistance related to the Lead Safe Ordinance and the Lead Safe Certification process.
+
+**Lead Safe Home Fund**
+
+* Most of the applications for financial assistance submitted as of Q1 2021 were from properties located in Zone 1, followed by Zone 2 which is aligned with the rollout timeline.
+
+* A sizable increase in applications is evident over time--104 applications  in Q2 2021, compared to 77 applications in Q1 2021.
+
+* Project completion is expectedly lagged, where we are just starting to see some project completion among applications submitted in Q4 2020 and Q1 2021.
+
+**Lead Safe Certifications**
+
+* The vast majority (XX%) of Lead Safe Certification applications are passing with certification awarded.
+
+* In Q2 2021 XX certifications were issued, which is a huge increase in comparison to Q1 2021 where only XX certifications were issued.  
+
+* Despite an upward trend, the number of properties with a Lead Safe Certification in Zones 1 and 2 represent a small fraction of the number of rental properties on the rental registry in each zone (XX%), indicating that there is still a long way to go to get rental properties certified in early rollout zones.
+

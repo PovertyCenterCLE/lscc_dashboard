@@ -84,13 +84,23 @@ Following CHN guidelines, funding total and average are suppressed if there are 
 
 The Resource Center data is provided by Environmental Health Watch (EHW) on a quarterly basis. 
 
-**Contact Type**
+**Callers**
 
-`Tenant` is an individual who is renting their house or apartment.
+The contact type and interest area of new callers are displayed in the dashboard.
+
+`Contact Type` - `Tenant` is an individual who is renting their house or apartment.
 `Landlord` is an individual who owns a house or apartment and rents it to someone else. 
 `Home Owner` is an individual who owns a house or apartment and lives in it themselves. 
 `Anonymous Contact` is an individual who chose not to share their contact type with the Resource Center.
 
-Definitions for Contact Interest Area, and Training categories are coming soon. 
+`Contact Interest Area` - Category definitions are coming soon. 
 
-An additional Community Engagement Metric is coming soon.
+**Training**
+
+`Renovation, Repair & Painting (RRP) Certification` is a U.S. Environmental Protection Agency (EPA) certified training will equip individuals with skill and knowledge to join the lead remediation workforce. Landlords/property managers who want to complete work on their own properties are required by federal law to have this certification. 
+
+`Clearance Technician Certification` This training will equip individuals with the skills necessary to complete a Lead Clearance, which is the examination that determines a property to be lead safe.
+
+`Hands-On Vetting Experience` This training offers an opportunity to receive hands-on engagement and experience for either completing lead safe remediation work and/or completing lead clearance examinations on properties in Cleveland. The completion of this training provides an opportunity to be added to the vetted list of contracted workers that will be publicized for the city of Cleveland community.
+
+**An additional Community Engagement Metric is coming soon.**
