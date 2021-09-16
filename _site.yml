@@ -4,7 +4,7 @@ navbar:
   - text: "Home"
     href: index.html
   - text: "View dashboard"
-    href: "https://cwru-urb-pov.shinyapps.io/lscc_data_dashboard_beta_0902/#section-baseline"
+    href: "https://cwru-urb-pov.shinyapps.io/lscc_data_dashboard_beta_0726/#section-baseline"
   - text: "Download the data"
     href: data-download-alt.html
   - text: "Technical Notes & Documentation"
