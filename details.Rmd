@@ -16,6 +16,8 @@ Zone	| Rollout Month Due Date | Zip Codes
 7	| September 2022 | 44109, 44115, 44127, 44137
 8	| December 2022 | 44105, 44112, 44118, 44121, 44122, 44125
 
+<br>
+
 ## Lead Poisoning
 
 **Percent of Children Tested:**
@@ -57,6 +59,7 @@ For more information on ODH guidelines: https://odh.ohio.gov/wps/portal/gov/odh/
 
 *The lead data used in this dashboard come from the Ohio Department of Health. This should not be considered an endorsement of this study or these conclusions by the Ohio Department of Health.*
 
+<br>
 
 ## Housing Market
 
@@ -76,6 +79,7 @@ Cleveland Municipal Court eviction cases counts are scraped weekly from the onli
 
 Because properties owned by Cleveland Municipal Housing Authority (CMHA) are not subject to rental registration nor the lead safe ordinance, eviction cases in which CMHA is the plaintiff have been excluded from the counts listed in the dashboard.
 
+<br>
 
 ## Lead Safe Certification
 
@@ -89,6 +93,7 @@ Exempt properties include those for which an application for lead safe certifica
 
 For a detailed explanation of the certification process: https://www.clevelandohio.gov/CityofCleveland/Home/Government/CityAgencies/BuildingHousing/LeadCertification
 
+<br>
 
 ## Loans and Grants
 
@@ -104,22 +109,26 @@ The loans and grants data is provided by CHN Housing Partners on a quarterly bas
 
 **Funding Suppression**
 
-Following CHN guidelines, funding total and average are suppressed if there are 3 or fewer units with an estimated funding award in a particular geography. 
+Following CHN guidelines, funding total and average are suppressed if there are 3 or fewer units with an estimated funding award in a particular geography.
+
+
+<br>
+
 
 ## Resource Center
 
-The Resource Center data is provided by Environmental Health Watch (EHW) on a quarterly basis. 
+The Resource Center data is provided by Environmental Health Watch (EHW) on a quarterly basis. Additional community engagement and workforce metrics coming soon. 
 
 **Callers**
 
 The contact type and interest area of new callers are displayed in the dashboard.
 
-`Contact Type` - `Tenant` is an individual who is renting their house or apartment.
-`Landlord` is an individual who owns a house or apartment and rents it to someone else. 
-`Home Owner` is an individual who owns a house or apartment and lives in it themselves. 
-`Anonymous Contact` is an individual who chose not to share their contact type with the Resource Center.
+`Contact Type` - `"Tenant"` is an individual who is renting their house or apartment.
+`"Landlord"` is an individual who owns a house or apartment and rents it to someone else. 
+`"Home Owner"` is an individual who owns a house or apartment and lives in it themselves. 
+`"Anonymous Contact"` is an individual who chose not to share their contact type with the Resource Center.
 
-`Contact Interest Area` - Category definitions are coming soon. Interest area is missing if it was not captured by the intake staff.
+`Contact Interest Area` - Category definitions are coming soon. Interest area is listed as '"Missing/Training Sign-Up"' if it was not captured by the intake staff or if an individual signed up for a lead remediation training via the Event Brite platform. EHW is working to better differentiate these two categories in future quarters. 
 
 **Training**
 
@@ -131,4 +140,3 @@ The contact type and interest area of new callers are displayed in the dashboard
 
 The name for the experiential portion of the workforce training changed from "LSRC: Free Two-Part Training" to "Free Hands-On Vetting Experience".
 
-**An additional Community Engagement Metric is coming soon.**
