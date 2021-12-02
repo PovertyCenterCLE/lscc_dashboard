@@ -1,9 +1,9 @@
 ---
-title: "Key Findings"
+title: "Key Takeaways"
 output: html_document
 ---
 
-Research briefs, reports, and published manuscripts providing key information about the lead and housing landscape in Cleveland can be accessed on the [Center on Urban Poverty and Community Development's Lead Safe Research page](https://case.edu/socialwork/povertycenter/our-work/lead-safe-research).
+Research briefs, reports, and published manuscripts providing key information about the lead and housing landscape in Cleveland can be accessed on the [Center on Poverty and Community Development's Lead Safe Research page](https://case.edu/socialwork/povertycenter/our-work/lead-safe-research).
 
 As of Quarter 3, 2021:
 

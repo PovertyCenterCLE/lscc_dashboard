@@ -22,7 +22,7 @@ Zone	| Rollout Month Due Date | Zip Codes
 
 **Percent of Children Tested:**
 
-All lead tests (both those done through a capillary puncture or venous lab draw) that are reported to the Ohio Department of Health (ODH) for children aged 0 to 6 residing in Cuyahoga County are provided to the Center on Urban Poverty and Community Development on an ongoing basis. The address of the child at the time of the test is included in the data from ODH.
+All lead tests (both those done through a capillary puncture or venous lab draw) that are reported to the Ohio Department of Health (ODH) for children aged 0 to 6 residing in Cuyahoga County are provided to the Center on Poverty and Community Development on an ongoing basis. The address of the child at the time of the test is included in the data from ODH.
 
 Venous tests are the only tests considered to be confirmatory by ODH.  This dashboard only counts confirmed tests. If a child receives more than one test in a year, they are counted only once.
 
@@ -33,7 +33,7 @@ The percent of children tested in each year is calculated by summing the number 
 
 **Percent of Children with an Elevated Blood Lead Level (EBLL) of those tested**
 
-An Elevated Blood Lead Level (EBLL) is defined according to the current standard of >= 5 micrograms per deciliter.  The standard used to be higher and may continue to trend downward. The data practice at the Center on Urban Poverty and Community Development is to retroactively flag previous testing data to modern standards. 
+An Elevated Blood Lead Level (EBLL) is defined according to the current standard of >= 5 micrograms per deciliter.  The standard used to be higher and may continue to trend downward. The data practice at the Center on Poverty and Community Development is to retroactively flag previous testing data to modern standards. 
 
 The number of children aged 0-3 and 0-6 with a confirmed EBLL in each year are summed by geography.  This number is divided by the total number of children aged 0-3 and 0-6 tested each year.  If a child receives more than one test screening or more than one EBLL in a year, they are counted only once.
 
@@ -65,7 +65,7 @@ For more information on ODH guidelines: https://odh.ohio.gov/wps/portal/gov/odh/
 
 **Rental Registrations**
  
-Rental registration records are provided to the Center on Urban Poverty and Community Development from the City of Cleveland Department of Building and Housing.  Data are cleaned and standardized so that address and parcel numbers are consistent. Records without parcel numbers are geocoded to a building location and spatially matched to a parcel.
+Rental registration records are provided to the Center on Poverty and Community Development from the City of Cleveland Department of Building and Housing.  Data are cleaned and standardized so that address and parcel numbers are consistent. Records without parcel numbers are geocoded to a building location and spatially matched to a parcel.
 
 Records are then coded to their Lead Safe Certification roll-out zone (1 through 8), neighborhood, and zip code. Records that can not be coded to a geography are coded as “unknown geography” and are not included in the dashboard numbers. Records are categorized as follows: records with a status of “renewed” or “registration renewed” are coded as “active” during the quarter first considered active and through the end of the calendar year unless the status is changed to  “closed” or “no renewal.” 
 
@@ -83,11 +83,11 @@ Because properties owned by Cleveland Municipal Housing Authority (CMHA) are not
 
 ## Lead Safe Certification
 
-Lead Safe Certification records are provided to the Center on Urban Poverty and Community Development from the City of Cleveland Department of Building and Housing.  Data are cleaned and standardized so that address and parcel numbers are consistent. Records without parcel numbers are geocoded to a building location and spatially matched to a parcel when possible.
+Lead Safe Certification records are provided to the Center on Poverty and Community Development from the City of Cleveland Department of Building and Housing.  Data are cleaned and standardized so that address and parcel numbers are consistent. Records without parcel numbers are geocoded to a building location and spatially matched to a parcel when possible.
 
 Records are then coded to their Lead Safe Certification roll-out zone (1 through 8), neighborhood, and zip code. Records that can not be linked to a geography are coded as “unknown geography” and are not included in the dashboard numbers. 
 
-The owner of a rental property submits an application to the Department of Building and Housing to get a lead safe certification . The records provided to the Center on Urban Poverty and Community Development organize submitted applications into four categories to reflect the current status of the application: Pass, Fail, Pending, and Exempt. 
+The owner of a rental property submits an application to the Department of Building and Housing to get a lead safe certification . The records provided to the Center on Poverty and Community Development organize submitted applications into four categories to reflect the current status of the application: Pass, Fail, Pending, and Exempt. 
 
 Exempt properties include those for which an application for lead safe certification was submitted to the Department of Building and Housing, but a review of the property determined it was not subject to the requirements of the lead safe legislation. Typically, these are rental properties that were built after 1978 or that are owner-occupied.
 
