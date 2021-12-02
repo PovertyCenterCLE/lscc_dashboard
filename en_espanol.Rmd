@@ -67,7 +67,7 @@ Estas son solo algunas de las preguntas que el tablero puede ayudar a responder:
 
 <div class="card" style="width: 50 rem;">
   <ul class="list-group list-group-flush">
-    <li class="list-group-item" id="q5"><a  href="https://cwru-urb-pov.shinyapps.io/lscc_data_dashboard_beta_0726/#section-resource-center">¿Cuántos profesionales han sido capacitados y certificados para detectar plomo en los hogares? </a></li>
+    <li class="list-group-item" id="q5"><a  href="https://cwru-urb-pov.shinyapps.io/lscc_data_dashboard_beta_0726/#section-resource-center">¿Cuántos entrenamientos para Técnicos de limpieza de plomo se han realizado? </a></li>
      <li class="list-group-item" id="q6"><a href="https://cwru-urb-pov.shinyapps.io/lscc_data_dashboard_beta_0726/#section-loans-and-grants">¿Cuántos propietarios han recibido préstamos o subvenciones para que su propiedad sea segura con el plomo? </a></li>
      </ul>
 </div>

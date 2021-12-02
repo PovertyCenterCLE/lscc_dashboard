@@ -54,7 +54,7 @@ Here are just a few of the questions the dashboard can help answer:
 
 <div class="card" style="width: 50 rem;">
   <ul class="list-group list-group-flush">
-    <li class="list-group-item" id="q5"><a href="https://cwru-urb-pov.shinyapps.io/lscc_data_dashboard_beta_0726/#section-resource-center" target="_blank">How many lead safe technicians have been trained and certified?</a></li>
+    <li class="list-group-item" id="q5"><a href="https://cwru-urb-pov.shinyapps.io/lscc_data_dashboard_beta_0726/#section-resource-center" target="_blank">How many lead safe technician trainings have been provided?</a></li>
      <li class="list-group-item" id="q6"><a href="https://cwru-urb-pov.shinyapps.io/lscc_data_dashboard_beta_0726/#section-loans-and-grants" target="_blank">How many property owners have received loans or grants to make their property lead safe?</a></li>
      </ul>
 </div>

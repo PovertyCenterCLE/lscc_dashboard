@@ -13,7 +13,7 @@
 
 <title>Technical Documentation</title>
 
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
@@ -286,6 +286,60 @@ $(document).ready(function () {
 </div>
 
 
+<div id="zone-definitions" class="section level2">
+<h2>Zone Definitions</h2>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Zone</th>
+<th align="left">Rollout Month</th>
+<th align="left">Zip Codes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">1</td>
+<td align="left">March 2021</td>
+<td align="left">44120, 44135</td>
+</tr>
+<tr class="even">
+<td align="left">2</td>
+<td align="left">June 2021</td>
+<td align="left">44106, 44111</td>
+</tr>
+<tr class="odd">
+<td align="left">3</td>
+<td align="left">September 2021</td>
+<td align="left">44102, 44142</td>
+</tr>
+<tr class="even">
+<td align="left">4</td>
+<td align="left">December 2021</td>
+<td align="left">44107, 44110, 44113, 44130</td>
+</tr>
+<tr class="odd">
+<td align="left">5</td>
+<td align="left">March 2022</td>
+<td align="left">44103, 44119, 44128, 44129, 44144</td>
+</tr>
+<tr class="even">
+<td align="left">6</td>
+<td align="left">June 2022</td>
+<td align="left">44104, 44108, 44114, 44117, 44131, 44134</td>
+</tr>
+<tr class="odd">
+<td align="left">7</td>
+<td align="left">September 2022</td>
+<td align="left">44109, 44115, 44127, 44137</td>
+</tr>
+<tr class="even">
+<td align="left">8</td>
+<td align="left">December 2022</td>
+<td align="left">44105, 44112, 44118, 44121, 44122, 44125</td>
+</tr>
+</tbody>
+</table>
+</div>
 <div id="lead-poisoning" class="section level2">
 <h2>Lead Poisoning</h2>
 <p><strong>Percent of Children Tested:</strong></p>
@@ -311,8 +365,8 @@ $(document).ready(function () {
 <h2>Housing Market</h2>
 <p><strong>Rental Registrations</strong></p>
 <p>Rental registration records are provided to the Center on Urban Poverty and Community Development from the City of Cleveland Department of Building and Housing. Data are cleaned and standardized so that address and parcel numbers are consistent. Records without parcel numbers are geocoded to a building location and spatially matched to a parcel.</p>
-<p>Records are then coded to their Lead Safe Certification roll-out zone (1 through 8), neighborhood, and zip code. Records that can not be coded to a geography are coded as “unknown geography” and are not included in the dashboard numbers. Records are categorized as follows: records with a status of “renewed” or “registration renewed” are coded as “active,” records with a status of “expired” or “about to expire” are coded as “noncompliant,” and records with the status of “closed” or “no renewal” are coded as “closed.” Records with any other status are dropped; these are most often test records, records that were created mistakenly, and other instances that do not represent a valid rental registration.</p>
-<p>Two types of duplicate records are then removed. The first are records with the same unique identifier, workflow status update and date. Second, a set of unique parcel-addresses and deduplicate rental registration IDs based on unique parcel-addresses is created. We use the parcel-address because a given parcel can have multiple addresses associated with it, and each can be a valid record. Multiple rental registrations can be associated with a given parcel-address and at times the records are duplicates and/or can overlap one time-wise. We prioritize keeping the record with an active status. The aim here is to create the most consistent depiction of a given property’s rental status over time.</p>
+<p>Records are then coded to their Lead Safe Certification roll-out zone (1 through 8), neighborhood, and zip code. Records that can not be coded to a geography are coded as “unknown geography” and are not included in the dashboard numbers. Records are categorized as follows: records with a status of “renewed” or “registration renewed” are coded as “active” during the quarter first considered active and through the end of the calendar year unless the status is changed to “closed” or “no renewal.”</p>
+<p>Records are then deduplicated by parcel. When multiple records are associated with a given parcel, we prioritize keeping the record with an active status. This creates the most consistent depiction of a property’s rental registration status over time.</p>
 <p>Annual/quarterly counts of rental registration records by record status and geographies of interest are then created. Indicators are coded based on the last status in the given quarter. Yearly indicators prioritize the active status, counting a property as active if it is active for any portion of the year. Counts of units reflect the unit count indicated in the rental registration record. In instances where rental registration records are deduplicated and unit count is inconsistent across records, the highest unit count associated with a record is used.</p>
 <p><strong>Evictions</strong></p>
 <p>Cleveland Municipal Court eviction cases counts are scraped weekly from the online court docket system and compiled. These data contain filing records and attributes associated with the filing, docket entry records, and event records. The addresses subject to the eviction filing are geocoded and assigned to geographies of interest. Filing records, docket entries, and event records are linked together. We search docket entries and event records for move-outs scheduled to create a flat file of eviction filings and move-outs scheduled. A move-out can be scheduled when a judgment is found for the plaintiff in the eviction case, and the plaintiff purchases a writ of restitution and schedules a move-out with the court. Counts of filings and move-outs scheduled are compiled by geographies of interest.</p>
@@ -322,9 +376,9 @@ $(document).ready(function () {
 <h2>Lead Safe Certification</h2>
 <p>Lead Safe Certification records are provided to the Center on Urban Poverty and Community Development from the City of Cleveland Department of Building and Housing. Data are cleaned and standardized so that address and parcel numbers are consistent. Records without parcel numbers are geocoded to a building location and spatially matched to a parcel when possible.</p>
 <p>Records are then coded to their Lead Safe Certification roll-out zone (1 through 8), neighborhood, and zip code. Records that can not be linked to a geography are coded as “unknown geography” and are not included in the dashboard numbers.</p>
-<p>The owner of a rental property submits an application to the Department of Building and Housing to get a lead safe certification for their property. The records provided to the Center on Urban Poverty and Community Development organize submitted applications into four categories to reflect the current status of the application: Pass, Fail, Pending, and Exempt.</p>
-<p>Properties with a status of ‘Pass’ are those that have undergone inspection by the Department of Building and Housing and found to be lead safe. If the inspection identifies sources of potential lead exposure on the property, the property owner must first take the appropriate control measures to address the source of exposure.</p>
-<p>Exempt properties include those for which an application for lead safe certification was submitted to the Department of Building and Housing, but a review of the property determined it was not subject to the requirements of the lead safe legislation. Typically, these are rental properties built after 1978 or properties that are owner-occupied.</p>
+<p>The owner of a rental property submits an application to the Department of Building and Housing to get a lead safe certification . The records provided to the Center on Urban Poverty and Community Development organize submitted applications into four categories to reflect the current status of the application: Pass, Fail, Pending, and Exempt.</p>
+<p>Exempt properties include those for which an application for lead safe certification was submitted to the Department of Building and Housing, but a review of the property determined it was not subject to the requirements of the lead safe legislation. Typically, these are rental properties that were built after 1978 or that are owner-occupied.</p>
+<p>For a detailed explanation of the certification process: <a href="https://www.clevelandohio.gov/CityofCleveland/Home/Government/CityAgencies/BuildingHousing/LeadCertification" class="uri">https://www.clevelandohio.gov/CityofCleveland/Home/Government/CityAgencies/BuildingHousing/LeadCertification</a></p>
 </div>
 <div id="loans-and-grants" class="section level2">
 <h2>Loans and Grants</h2>
@@ -340,11 +394,12 @@ $(document).ready(function () {
 <p><strong>Callers</strong></p>
 <p>The contact type and interest area of new callers are displayed in the dashboard.</p>
 <p><code>Contact Type</code> - <code>Tenant</code> is an individual who is renting their house or apartment. <code>Landlord</code> is an individual who owns a house or apartment and rents it to someone else. <code>Home Owner</code> is an individual who owns a house or apartment and lives in it themselves. <code>Anonymous Contact</code> is an individual who chose not to share their contact type with the Resource Center.</p>
-<p><code>Contact Interest Area</code> - Category definitions are coming soon.</p>
+<p><code>Contact Interest Area</code> - Category definitions are coming soon. Interest area is missing if it was not captured by the intake staff.</p>
 <p><strong>Training</strong></p>
 <p><code>Renovation, Repair &amp; Painting (RRP) Certification</code> is a U.S. Environmental Protection Agency (EPA) certified training will equip individuals with skill and knowledge to join the lead remediation workforce. Landlords/property managers who want to complete work on their own properties are required by federal law to have this certification.</p>
 <p><code>Clearance Technician Certification</code> This training will equip individuals with the skills necessary to complete a Lead Clearance, which is the examination that determines a property to be lead safe.</p>
 <p><code>Hands-On Vetting Experience</code> This training offers an opportunity to receive hands-on engagement and experience for either completing lead safe remediation work and/or completing lead clearance examinations on properties in Cleveland. The completion of this training provides an opportunity to be added to the vetted list of contracted workers that will be publicized for the city of Cleveland community.</p>
+<p>The name for the experiential portion of the workforce training changed from “LSRC: Free Two-Part Training” to “Free Hands-On Vetting Experience”.</p>
 <p><strong>An additional Community Engagement Metric is coming soon.</strong></p>
 </div>
 
