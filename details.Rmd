@@ -79,7 +79,7 @@ Cleveland Municipal Court eviction cases counts are scraped weekly from the onli
 
 Because properties owned by Cleveland Municipal Housing Authority (CMHA) are not subject to rental registration nor the lead safe ordinance, eviction cases in which CMHA is the plaintiff have been excluded from the counts listed in the dashboard.
 
-* Special thanks to [Sam Learner](https://www.samlearner.com/) for generously offering his time and technical expertise to the Poverty Center by building and maintaining the tool for scraping records from the court docket system. 
+*Special thanks to [Sam Learner](https://www.samlearner.com/) for generously offering both his time and technical expertise by building and maintaining the tool for scraping eviction records.*
 
 <br>
 
