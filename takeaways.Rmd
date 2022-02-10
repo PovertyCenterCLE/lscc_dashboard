@@ -5,26 +5,31 @@ output: html_document
 
 Research briefs, reports, and published manuscripts providing key information about the lead and housing landscape in Cleveland can be accessed on the [Center on Poverty and Community Development's Lead Safe Research page](https://case.edu/socialwork/povertycenter/our-work/lead-safe-research).
 
-As of Quarter 3, 2021:
+As of Quarter 4, 2021:
 
 **Lead Safe Resource Center**
 
-* We see a steady increase in the number of new callers in each quarter. In Q3 2021, there were 1,026 callers, up from 717 in Q2 2021. The majority of callers were seeking assistance related to the Lead Safe Ordinance and the Lead Safe Certification process.
+* We see a decrease in the number of new callers in Q4 2021 compared to Q3 2021. There were 597 callers, down from 1,026 callers in Q3 2021. We suspect that this decrease could be seasonal, but need to continue to monitor to confirm. 
+
+* The majority of new callers were seeking assistance related to the Lead Safe Certification process and workforce-related issues.  There was a marked increase in the share of calls related to the workforce this quarter.
+
+* For the third quarter in a row, the majority of callers identity as landlords.
 
 **Lead Safe Home Fund**
 
-* Most of the applications for financial assistance submitted as of Q3 2021 were from properties located in Zone 1, followed by Zone 2 and Zone 3, which is aligned with the rollout timeline.
+* Most of the applications for financial assistance submitted as of Q4 2021 were from properties located in Zone 1, followed by Zone 2 and Zone 3, which is aligned with the rollout timeline. We also see a small uptick in the number of applications submitted in Zones 4, 5 and 6.
 
+* Although there’s an overall trend towards increasing applications over time, there was a slight decline in Q4 compared to Q3 2021.  Again, this could be seasonal, but we will continue to monitor this over time. There were 118 applications submitted in Q4 compared to 136 applications in Q3 2021.
 
-* A sizable increase in applications is evident over time–136 applications in Q3 2021 compared to 97 applications in Q2 2021 and 77 applications in Q1 2021.
+* At the end of Q4 2021, 133 applications had been accepted, 49 grants had been awarded, and 27 projects had been completed. 
 
 
 **Lead Safe Certifications**
 
-* Approval of submitted applications continues to be very high.
+* Approval of submitted applications continues to be very high. The vast majority of submitted applications are passing.
 
-* By the end of the third quarter, applications for lead safe certification had grown considerably. The third quarter far outpaced activity in the first two quarters.
+* By the end of the fourth quarter, applications for lead safe certification had grown considerably. The fourth quarter of 2021 far outpaced activity in the first three quarters with the number of submitted applications nearly doubling between Q3 and Q4.
 
-* In Q3 2021 380 certifications were issued.
+* Most of the applications for certification submitted as of Q4 2021 were from properties located in Zone 1, followed by Zone 2 and Zone 3, which is aligned with the rollout timeline. We see upward trends across all of the other rollout zones as well.
 
-* While this strong upward trend is encouraging, compared to the numbers of properties subject to the Lead Safe ordinance in roll-out Zones 1-3, the numbers involved in a lead safe certification application continue to reflect low compliance. 
+* While this strong upward trend is encouraging, compared to the numbers of properties subject to the Lead Safe ordinance, the numbers involved in a lead safe certification application continue to reflect relatively low compliance.
