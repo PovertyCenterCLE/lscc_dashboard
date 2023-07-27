@@ -25,7 +25,8 @@ To cite the data in the Lead Safe Cleveland Coalition Dashboard, first be sure y
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
 download_link(
-  link = "https://drive.google.com/uc?export=download&id=1socU8nelYQM6GFkPBDs6GExCXpl3XBo6", 
+  link = "https://docs.google.com/spreadsheets/d/1HLGxiZZabTtCEGDN24HCAWLnTkonmhhC/edit?usp=sharing&ouid=115706292769154712613&rtpof=true&sd=true",
+  #link = "https://drive.google.com/uc?export=download&id=1socU8nelYQM6GFkPBDs6GExCXpl3XBo6", 
   button_label = "Lead data by rollout zone", 
   button_type = "success",
   has_icon = TRUE,
